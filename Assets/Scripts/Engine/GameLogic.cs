@@ -20,8 +20,9 @@ namespace TetrisEngine
 
         public float timeToStep = 2f;
 
-        [Header("Set max cleared row for win condition.")]
-        public int maxRowCleared = 10;
+        [Header("Set rows cleared as game levels.")]
+        public int[] levels = new int[3];
+        private int currentLevel = 0;
         private GameSettings mGameSettings;
         private Playfield mPlayfield;
         private List<TetriminoView> mTetriminos = new List<TetriminoView>();
@@ -74,6 +75,7 @@ namespace TetrisEngine
 
             GameOver.instance.HideScreen(0f);
             Score.instance.HideScreen();
+            LevelUp.instance.HideScreen(0f);
 
             RestartGame();
         }
@@ -98,23 +100,41 @@ namespace TetrisEngine
         //Callback from Playfield to destroy a line in view
         private void DestroyLine(int y)
         {
-            Score.instance.AddPoints(mGameSettings.pointsByBreakingLine);
-
-            // Win Condition
-            if (Score.instance.PlayerScore >= maxRowCleared * mGameSettings.pointsByBreakingLine)
-            {
-                SetGameOver();
-            }
-
+            Debug.Log(y);
             mTetriminos.ForEach(x => x.DestroyLine(y));
             mTetriminos.RemoveAll(x => x == null);
+
+            Score.instance.AddPoints(mGameSettings.pointsByBreakingLine);
+
+            int rowsCleared = Score.instance.PlayerScore / mGameSettings.pointsByBreakingLine;
+
+            if (rowsCleared >= levels[levels.Length - 1])
+            {
+                // Wwise integration for all levels cleared.
+                SetGameOver(true);
+                return;
+            }
+            for (int i = levels.Length - 2; i >= 0; i--)
+            {
+                if (rowsCleared >= levels[i])
+                {
+                    // Wwise integration for level cleared.
+                    currentLevel = i;
+                    if (mGameSettings.debugMode)
+                    {
+                        Debug.Log("Level " + currentLevel + " cleared");
+                    }
+                    LevelUp.instance.SetLevel(i);
+                    break;
+                }
+            }
         }
 
         //Callback from Playfield to show game over in view
-        private void SetGameOver()
+        private void SetGameOver(bool isWin = false)
         {
             mGameIsOver = true;
-            GameOver.instance.ShowScreen();
+            GameOver.instance.ShowScreen(isWin, levels.Length);
         }
 
         //Call to the engine to create a new piece and create a representation of the random piece in view

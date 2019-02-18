@@ -1,12 +1,12 @@
 {
-  "timeToStep": 1.0,
+  "timeToStep": 1,
   "pointsByBreakingLine": 100,
   "controledRandomMode": true,
-  "debugMode": false,
+  "debugMode": true,
   "moveRightKey": 275,
   "moveLeftKey": 276,
   "moveDownKey": 274,
-  "rotateRightKey": 32,
+  "rotateRightKey": 103,
   "rotateLeftKey": 102,
   "pieces": [{
       "name": "TetriminoI",

@@ -15,7 +15,7 @@ namespace TetrisEngine
         public const int HEIGHT = 22;
 
         public Action OnCurrentPieceReachBottom;
-        public Action OnGameOver;
+        public Action<bool> OnGameOver;
         public Action<int> OnDestroyLine;
 
         private int[][] mPlayfield = new int[WIDTH][];
@@ -90,7 +90,7 @@ namespace TetrisEngine
                     if (mGameSettings.debugMode)
                         Debug.Log("GAME OVER");
 
-                    OnGameOver.Invoke();
+                    OnGameOver.Invoke(false);
                     return;
                 }
 
