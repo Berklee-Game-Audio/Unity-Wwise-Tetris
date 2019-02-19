@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 279939274}
   - component: {fileID: 279939273}
   - component: {fileID: 279939272}
+  - component: {fileID: 279939275}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -201,6 +202,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279939270}
   m_CullTransparentMesh: 0
+--- !u!114 &279939275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279939270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbb104f290f44f61a1231a5579e4112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &292776431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,7 +1517,8 @@ MonoBehaviour:
     type: 3}
   tetriminoParent: {fileID: 897948402}
   timeToStep: 0.4
-  levels: 010000000200000003000000
+  stages: 010000000200000003000000
+  enableStartScreen: 1
 --- !u!4 &1997274774
 Transform:
   m_ObjectHideFlags: 0
@@ -1599,7 +1613,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1997274773}
-        m_MethodName: RestartGame
+        m_MethodName: Begin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

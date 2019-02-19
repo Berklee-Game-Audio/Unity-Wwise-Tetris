@@ -11,7 +11,7 @@ public class LevelUp : BaseScreen<LevelUp>
     public void SetLevel(int current)
     {
         level = current;
-        title.text = "LEVEL " + (level + 1) + " CLEARED";
+        title.text = "STAGE " + (level + 1);
         base.ShowScreen(1f);
 
         timer = new Timer(2000);

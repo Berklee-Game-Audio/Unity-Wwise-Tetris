@@ -1,6 +1,6 @@
 {
   "timeToStep": 1.0,
-  "pointsByBreakingLine": 100,
+  "pointsByBreakingLine": 1,
   "controledRandomMode": true,
   "debugMode": false,
   "moveRightKey": 275,

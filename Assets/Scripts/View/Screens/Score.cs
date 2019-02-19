@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Score : ScoreScreenType<Score>
 {
+
+    private int lastStage;
     public int PlayerScore
     {
         get
@@ -14,17 +16,21 @@ public class Score : ScoreScreenType<Score>
 
     private int mInternalPoints = 0;
 
+
+    public void SetLastStage(int num)
+    {
+        lastStage = num;
+    }
     public void AddPoints(int points)
     {
         mInternalPoints += points;
-        SetScoreText(mInternalPoints);
+        SetScoreText(mInternalPoints, lastStage);
         ShowScreen();
     }
-
     public void ResetScore()
     {
         mInternalPoints = 0;
-        SetScoreText(mInternalPoints);
+        SetScoreText(mInternalPoints, lastStage);
     }
 
     public override void ShowScreen(float timeToTween = 1f)

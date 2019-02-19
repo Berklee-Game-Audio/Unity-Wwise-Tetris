@@ -21,7 +21,7 @@ namespace TetrisEngine
         public float timeToStep = 2f;
 
         [Header("Set rows cleared as game levels.")]
-        public int[] levels = new int[3];
+        public int[] stages = new int[3];
         private int currentLevel = 0;
         private GameSettings mGameSettings;
         private Playfield mPlayfield;
@@ -59,6 +59,7 @@ namespace TetrisEngine
             Score.instance.HideScreen(0f);
             LevelUp.instance.HideScreen(0f);
             StartGame.instance.ShowScreen(0f);
+            Score.instance.SetScoreText(0, stages[stages.Length - 1]);
         }
         // Initiates pooling systems and playfield.
         public void Begin()
@@ -88,13 +89,13 @@ namespace TetrisEngine
         //Responsable for restaring all necessary components
         public void RestartGame()
         {
+            LevelUp.instance.SetLevel(0);
+            LevelUp.instance.ShowScreen(1f);
             GameOver.instance.HideScreen(0f);
             Score.instance.HideScreen(0f);
-            LevelUp.instance.HideScreen(0f);
             StartGame.instance.HideScreen(1f);
+            Score.instance.SetLastStage(stages[stages.Length - 1]);
             Score.instance.ResetScore();
-
-
             mTimer = 0f;
 
             mPlayfield.ResetGame();
@@ -128,33 +129,40 @@ namespace TetrisEngine
 
             int rowsCleared = Score.instance.PlayerScore / mGameSettings.pointsByBreakingLine;
 
-            if (rowsCleared >= levels[levels.Length - 1])
+            if (rowsCleared >= stages[stages.Length - 1])
             {
-                // Wwise integration for all levels cleared.
+                // Wwise integration for all stages cleared.
                 SetGameOver(true);
                 return;
             }
-            for (int i = levels.Length - 2; i >= 0; i--)
+            for (int i = stages.Length - 2; i >= 0; i--)
             {
-                if (rowsCleared >= levels[i])
+                if (rowsCleared >= stages[i])
                 {
-                    // Wwise integration for level cleared.
+                    // Wwise integration for stage cleared.
                     currentLevel = i;
                     if (mGameSettings.debugMode)
                     {
                         Debug.Log("Level " + currentLevel + " cleared");
                     }
+                    IncreaseSpeed();
                     LevelUp.instance.SetLevel(i);
                     break;
                 }
             }
         }
 
+        private void IncreaseSpeed()
+        {
+            timeToStep -= 0.2f;
+            Debug.Log("current speed: " + timeToStep);
+        }
+
         //Callback from Playfield to show game over in view
         private void SetGameOver(bool isWin = false)
         {
             mGameIsOver = true;
-            GameOver.instance.ShowScreen(isWin, levels.Length);
+            GameOver.instance.ShowScreen(isWin, stages.Length);
         }
 
         //Call to the engine to create a new piece and create a representation of the random piece in view
