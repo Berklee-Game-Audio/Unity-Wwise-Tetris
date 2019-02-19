@@ -212,8 +212,6 @@ namespace TetrisEngine
                 }
                 playfield += Environment.NewLine;
             }
-
-            Debug.Log(playfield);
         }
     }
 }

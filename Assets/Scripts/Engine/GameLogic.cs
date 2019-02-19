@@ -28,6 +28,9 @@ namespace TetrisEngine
         private List<TetriminoView> mTetriminos = new List<TetriminoView>();
         private float mTimer = 0f;
 
+        [Space(10)]
+        [SerializeField]
+        protected bool enableStartScreen = true;
         private Pooling<TetriminoBlock> mBlockPool = new Pooling<TetriminoBlock>();
         private Pooling<TetriminoView> mTetriminoPool = new Pooling<TetriminoView>();
 
@@ -41,11 +44,24 @@ namespace TetrisEngine
 
         private TetriminoView mPreview;
         private bool mRefreshPreview;
-        private bool mGameIsOver;
+        private bool mGameIsOver = true;
 
-        //Regular Unity Start method
-        //Responsable for initiating all the pooling systems and the playfield
         public void Start()
+        {
+
+            if (!enableStartScreen)
+            {
+                StartGame.instance.HideScreen(0f);
+                Begin();
+                return;
+            }
+            GameOver.instance.HideScreen(0f);
+            Score.instance.HideScreen(0f);
+            LevelUp.instance.HideScreen(0f);
+            StartGame.instance.ShowScreen(0f);
+        }
+        // Initiates pooling systems and playfield.
+        public void Begin()
         {
             mBlockPool.createMoreIfNeeded = true;
             mBlockPool.Initialize(tetriminoBlockPrefab, null);
@@ -58,24 +74,12 @@ namespace TetrisEngine
                 x.blockPool = mBlockPool;
             };
 
-            //Checks for the json file
-            if (!System.IO.File.Exists(JSON_PATH))
-                throw new System.Exception(string.Format("GameSettings.json could not be found inside {0}. Create one in Window>GameSettings Creator.", JSON_PATH));
-
-            //Loads the GameSettings Json
-            var json = System.IO.File.ReadAllText(JSON_PATH);
-            mGameSettings = JsonUtility.FromJson<GameSettings>(json);
-            mGameSettings.CheckValidSettings();
-            timeToStep = mGameSettings.timeToStep;
+            LoadSettings();
 
             mPlayfield = new Playfield(mGameSettings);
             mPlayfield.OnCurrentPieceReachBottom = CreateTetrimino;
             mPlayfield.OnGameOver = SetGameOver;
             mPlayfield.OnDestroyLine = DestroyLine;
-
-            GameOver.instance.HideScreen(0f);
-            Score.instance.HideScreen();
-            LevelUp.instance.HideScreen(0f);
 
             RestartGame();
         }
@@ -84,10 +88,13 @@ namespace TetrisEngine
         //Responsable for restaring all necessary components
         public void RestartGame()
         {
-            GameOver.instance.HideScreen();
+            GameOver.instance.HideScreen(0f);
+            Score.instance.HideScreen(0f);
+            LevelUp.instance.HideScreen(0f);
+            StartGame.instance.HideScreen(1f);
             Score.instance.ResetScore();
 
-            mGameIsOver = false;
+
             mTimer = 0f;
 
             mPlayfield.ResetGame();
@@ -95,12 +102,25 @@ namespace TetrisEngine
             mTetriminos.Clear();
 
             CreateTetrimino();
+            mGameIsOver = false;
+        }
+
+        private void LoadSettings()
+        {
+            // Checks for the json file
+            if (!System.IO.File.Exists(JSON_PATH))
+                throw new System.Exception(string.Format("GameSettings.json could not be found inside {0}. Create one in Window>GameSettings Creator.", JSON_PATH));
+
+            // Loads the GameSettings Json
+            var json = System.IO.File.ReadAllText(JSON_PATH);
+            mGameSettings = JsonUtility.FromJson<GameSettings>(json);
+            mGameSettings.CheckValidSettings();
+            timeToStep = mGameSettings.timeToStep;
         }
 
         //Callback from Playfield to destroy a line in view
         private void DestroyLine(int y)
         {
-            Debug.Log(y);
             mTetriminos.ForEach(x => x.DestroyLine(y));
             mTetriminos.RemoveAll(x => x == null);
 
