@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="89">
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Attenuations\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Audio Devices\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Control Surface Sessions\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Conversion Settings\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1548366009" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Effects\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Effects\Factory Effects.wwu" DateLow="1548366009" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Events\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Game Parameters\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Mixing Sessions\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Modulators\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Presets\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Queries\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Queries\Factory Queries.wwu" DateLow="1548366009" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\SoundBanks\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\States\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Switches\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Triggers\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Virtual Acoustics\Default Work Unit.wwu" DateLow="1550613758" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\Wwise Tetris\Wwise Tetris.wproj" DateLow="1550613758" DateHigh="0"/>
+</ValidationCache>

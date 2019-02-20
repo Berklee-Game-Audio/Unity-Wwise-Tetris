@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="6" Flags="601859981">
+	<Platform GUID="{9677E815-D5B8-416D-8A94-05B61161E1E8}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="3174512153" Timestamp="1550614810"/>
+				<File Name="Tetris_Soundbank" Hash="3567192052" Timestamp="1550614810"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="2767897225" Timestamp="1550614810"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{7662D538-5A82-4F81-8B48-8F1338B31CD4}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="926230271" Timestamp="1550614809"/>
+				<File Name="Tetris_Soundbank" Hash="3567192052" Timestamp="1550614809"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="457669723" Timestamp="1550614809"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+</IncrementalBankBuild>

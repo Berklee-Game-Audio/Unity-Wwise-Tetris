@@ -25,6 +25,7 @@ namespace TetrisEngine
         private int currentLevel = 0;
         private GameSettings mGameSettings;
         private Playfield mPlayfield;
+        private Wwise music;
         private List<TetriminoView> mTetriminos = new List<TetriminoView>();
         private float mTimer = 0f;
 
@@ -46,8 +47,11 @@ namespace TetrisEngine
         private bool mRefreshPreview;
         private bool mGameIsOver = true;
 
+        // private GameObject Wwise;
         public void Start()
         {
+
+            music = ScriptableObject.CreateInstance("Wwise") as Wwise;
 
             if (!enableStartScreen)
             {
@@ -56,10 +60,9 @@ namespace TetrisEngine
                 return;
             }
             GameOver.instance.HideScreen(0f);
-            Score.instance.HideScreen(0f);
             LevelUp.instance.HideScreen(0f);
             StartGame.instance.ShowScreen(0f);
-            Score.instance.SetScoreText(0, stages[stages.Length - 1]);
+
         }
         // Initiates pooling systems and playfield.
         public void Begin()
@@ -89,13 +92,16 @@ namespace TetrisEngine
         //Responsable for restaring all necessary components
         public void RestartGame()
         {
+            music.Play("game_start");
             LevelUp.instance.SetLevel(0);
-            LevelUp.instance.ShowScreen(1f);
             GameOver.instance.HideScreen(0f);
-            Score.instance.HideScreen(0f);
             StartGame.instance.HideScreen(1f);
-            Score.instance.SetLastStage(stages[stages.Length - 1]);
+
+            Score.instance.SetStages(stages);
+            Score.instance.SetLines(0);
+            Score.instance.SetStage(0, stages.Length);
             Score.instance.ResetScore();
+
             mTimer = 0f;
 
             mPlayfield.ResetGame();
@@ -128,10 +134,10 @@ namespace TetrisEngine
             Score.instance.AddPoints(mGameSettings.pointsByBreakingLine);
 
             int rowsCleared = Score.instance.PlayerScore / mGameSettings.pointsByBreakingLine;
-
+            music.Play("clear_row");
+            music.RTPC("score", Score.instance.PlayerScore);
             if (rowsCleared >= stages[stages.Length - 1])
             {
-                // Wwise integration for all stages cleared.
                 SetGameOver(true);
                 return;
             }
@@ -139,17 +145,19 @@ namespace TetrisEngine
             {
                 if (rowsCleared >= stages[i])
                 {
-                    // Wwise integration for stage cleared.
-                    currentLevel = i;
-                    if (mGameSettings.debugMode)
-                    {
-                        Debug.Log("Level " + currentLevel + " cleared");
-                    }
-                    IncreaseSpeed();
-                    LevelUp.instance.SetLevel(i);
+                    IncStage(i + 1);
                     break;
                 }
             }
+        }
+
+        public void IncStage(int stage)
+        {
+            music.Play("stage_complete");
+            currentLevel = stage;
+            IncreaseSpeed();
+            LevelUp.instance.SetLevel(stage);
+            Score.instance.SetStage(stage, stages.Length);
         }
 
         private void IncreaseSpeed()
@@ -162,6 +170,16 @@ namespace TetrisEngine
         private void SetGameOver(bool isWin = false)
         {
             mGameIsOver = true;
+
+            if (isWin)
+            {
+                music.Play("round_win");
+            }
+            else
+            {
+                music.Play("round_lose");
+            }
+
             GameOver.instance.ShowScreen(isWin, stages.Length);
         }
 
@@ -169,7 +187,10 @@ namespace TetrisEngine
         private void CreateTetrimino()
         {
             if (mCurrentTetrimino != null)
+            {
+                music.Play("land_shape");
                 mCurrentTetrimino.isLocked = true;
+            }
 
             var tetrimino = mPlayfield.CreateTetrimo();
             var tetriminoView = mTetriminoPool.Collect();
@@ -211,6 +232,7 @@ namespace TetrisEngine
             //Rotate Right
             if (Input.GetKeyDown(mGameSettings.rotateRightKey))
             {
+                music.Play("flip_shape");
                 if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x,
                                     mCurrentTetrimino.currentPosition.y,
                                     mCurrentTetrimino,
@@ -224,6 +246,7 @@ namespace TetrisEngine
             //Rotate Left
             if (Input.GetKeyDown(mGameSettings.rotateLeftKey))
             {
+                music.Play("flip_shape");
                 if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x,
                                                   mCurrentTetrimino.currentPosition.y,
                                                   mCurrentTetrimino,
@@ -237,6 +260,7 @@ namespace TetrisEngine
             //Move piece to the left
             if (Input.GetKeyDown(mGameSettings.moveLeftKey))
             {
+                music.Play("move_shape_left");
                 if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x - 1,
                                                   mCurrentTetrimino.currentPosition.y,
                                                   mCurrentTetrimino,
@@ -250,6 +274,7 @@ namespace TetrisEngine
             //Move piece to the right
             if (Input.GetKeyDown(mGameSettings.moveRightKey))
             {
+                music.Play("move_shape_right");
                 if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x + 1,
                                                   mCurrentTetrimino.currentPosition.y,
                                                   mCurrentTetrimino,

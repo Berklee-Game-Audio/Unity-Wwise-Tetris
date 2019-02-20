@@ -1,0 +1,28 @@
+Event	ID	Name			Wwise Object Path	Notes
+	361697008	round_win			\Default Work Unit\round_win	
+	528278262	pause_game			\Default Work Unit\pause_game	
+	733168346	game_start			\Default Work Unit\game_start	
+	898688307	move_shape_right			\Default Work Unit\move_shape_right	
+	1119896719	pause_release			\Default Work Unit\pause_release	
+	1146992660	move_shape_left			\Default Work Unit\move_shape_left	
+	1870373793	clear_row			\Default Work Unit\clear_row	
+	2005704188	main_menu			\Default Work Unit\main_menu	
+	2497998238	flip_shape			\Default Work Unit\flip_shape	
+	3411202357	round_lose			\Default Work Unit\round_lose	
+	3435819489	stage_complete			\Default Work Unit\stage_complete	
+	3742617664	land_shape			\Default Work Unit\land_shape	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	13985452	stage_complete	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\stage_complete_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\stage_complete		110720
+	126449204	clear_row	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\clear_row_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\clear_row		109196
+	173384168	game_start	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\game_start_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_start		103090
+	174280160	flip_shape	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\flip_shape_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\flip_shape		121242
+	192040688	main_menu	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\main_menu_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\main_menu		120076
+	430244361	pause_game	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\pause_game_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\pause_game		116708
+	697338976	land_shape	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\land_shape_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\land_shape		99686
+	712877260	move_shape_right	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\move_shape_right_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\move_shape_right		128232
+	720046553	round_win	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\round_win_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\round_win		131728
+	890552291	round_lose	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\round_lose_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\round_lose		138718
+	1004535330	pause_release	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\pause_release_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\pause_release		101866
+	1020061233	move_shape_left	Y:\Desktop\Wwise Tetris\.cache\Windows\SFX\move_shape_left_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\move_shape_left		115124
+

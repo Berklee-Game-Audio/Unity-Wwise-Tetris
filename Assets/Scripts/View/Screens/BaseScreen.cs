@@ -7,18 +7,17 @@ public abstract class BaseScreen<T> : MonoBehaviour where T : Component
 {
     public const float TIME_TO_TWEEN = 1f;
     public static T instance;
-
-    private GameObject component;
     protected CanvasGroup mCanvasGroup;
-
     protected virtual void Awake()
     {
+
         instance = GetComponent<T>();
         mCanvasGroup = GetComponent<CanvasGroup>();
     }
 
     public virtual void ShowScreen(float timeToTween = TIME_TO_TWEEN)
     {
+        instance.gameObject.SetActive(true);
         InternalAlphaScreen(timeToTween, 1f, () =>
         {
             mCanvasGroup.interactable = true;
@@ -30,6 +29,7 @@ public abstract class BaseScreen<T> : MonoBehaviour where T : Component
         InternalAlphaScreen(timeToTween, 0f, () =>
         {
             mCanvasGroup.interactable = false;
+            instance.gameObject.SetActive(false);
         });
     }
 

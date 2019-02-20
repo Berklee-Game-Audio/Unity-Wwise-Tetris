@@ -7,27 +7,33 @@ public abstract class ScoreScreenType<T> : BaseScreen<T> where T : Component
     protected Text scoreText;
 
     [SerializeField]
-    protected Text title;
+    protected Text titleText;
 
-    protected string mScorePrefix = "LINES: ";
+    [SerializeField]
+    protected Text stageText;
+    protected string linesPrefix = "LINES: ";
+    protected string stagePrefix = "STAGE: ";
 
-    public void DisplayText(string str)
-    {
-        scoreText.text = str;
-    }
-    public void SetScoreText(int value)
-    {
-        scoreText.text = mScorePrefix + value;
-    }
+    protected int[] stages;
 
-    public void SetScoreText(int value, int lastStage)
+    public void SetStages(int[] arr)
     {
-        scoreText.text = mScorePrefix + value + "/" + lastStage + "";
+        stages = arr;
     }
 
-    public void SetScoreText(int value, bool isWin, int levels)
+    public void SetLines(int value)
     {
-        scoreText.text = isWin ? "You cleared all " + levels + " levels!" : mScorePrefix + value;
-        title.text = isWin ? "GAME WON" : "GAME OVER";
+        scoreText.text = linesPrefix + value + "/" + stages[stages.Length - 1];
+    }
+
+    public void SetLines(int value, bool isWin, int stages)
+    {
+        scoreText.text = isWin ? "You cleared all " + stages + " stages!" : linesPrefix + value;
+        titleText.text = isWin ? "GAME WON" : "GAME OVER";
+    }
+
+    public void SetStage(int value, int stages)
+    {
+        stageText.text = stagePrefix + (value + 1) + "/" + stages;
     }
 }
