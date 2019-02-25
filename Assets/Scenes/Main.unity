@@ -1875,8 +1875,7 @@ MonoBehaviour:
   tetriminoBlockPrefab: {fileID: 1517317464988456, guid: fbce0012f0e774136be749fef5a33a32,
     type: 3}
   tetriminoParent: {fileID: 897948402}
-  timeToStep: 1
-  stages: 010000000200000003000000
+  stages: 0c0000001800000024000000
   enableStartScreen: 1
 --- !u!4 &1997274774
 Transform:
