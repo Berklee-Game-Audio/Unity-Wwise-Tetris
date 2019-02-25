@@ -6,7 +6,7 @@
   "moveRightKey": 275,
   "moveLeftKey": 276,
   "moveDownKey": 274,
-  "rotateRightKey": 32,
+  "rotateRightKey": 103,
   "rotateLeftKey": 102,
   "pieces": [{
       "name": "TetriminoI",

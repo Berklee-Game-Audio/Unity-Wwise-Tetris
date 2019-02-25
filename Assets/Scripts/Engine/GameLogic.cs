@@ -14,13 +14,13 @@ namespace TetrisEngine
         public GameObject tetriminoBlockPrefab;
         public Transform tetriminoParent;
 
-        [Header("This property will be overriten by GameSettings.json file.")]
-        [Space(-10)]
-        [Header("You can play with it while the game is in Play-Mode.")]
+        // [Header("This property will be overriten by GameSettings.json file.")]
+        // [Space(-10)]
+        // [Header("You can play with it while the game is in Play-Mode.")]
 
-        public float timeToStep = 2f;
+        private float timeToStep = 1f;
 
-        [Header("Set rows cleared as game levels.")]
+        [Header("Set rows cleared as game stages.")]
         public int[] stages = new int[3];
         private int currentLevel = 0;
         private GameSettings mGameSettings;
@@ -47,11 +47,18 @@ namespace TetrisEngine
         private bool mRefreshPreview;
         private bool mGameIsOver = true;
 
-        // private GameObject Wwise;
         public void Start()
         {
-
             music = ScriptableObject.CreateInstance("Wwise") as Wwise;
+
+            GameOver.instance.HideScreen(0f);
+            LevelUp.instance.HideScreen(0f);
+            StartGame.instance.ShowScreen(0f);
+            Score.instance.HideScreen(0f);
+
+            LoadSettings();
+            ShowKeys();
+
 
             if (!enableStartScreen)
             {
@@ -59,11 +66,19 @@ namespace TetrisEngine
                 Begin();
                 return;
             }
-            GameOver.instance.HideScreen(0f);
-            LevelUp.instance.HideScreen(0f);
-            StartGame.instance.ShowScreen(0f);
 
         }
+
+        private void ShowKeys()
+        {
+            string t = "";
+            t += mGameSettings.rotateLeftKey.ToString() + " and ";
+            t += mGameSettings.rotateRightKey.ToString() + " to rotate";
+            t += System.Environment.NewLine;
+            t += "Arrow keys to move";
+            StartGame.instance.SetHelpText(t);
+        }
+
         // Initiates pooling systems and playfield.
         public void Begin()
         {
@@ -78,8 +93,6 @@ namespace TetrisEngine
                 x.blockPool = mBlockPool;
             };
 
-            LoadSettings();
-
             mPlayfield = new Playfield(mGameSettings);
             mPlayfield.OnCurrentPieceReachBottom = CreateTetrimino;
             mPlayfield.OnGameOver = SetGameOver;
@@ -93,15 +106,11 @@ namespace TetrisEngine
         public void RestartGame()
         {
             music.Play("game_start");
-            LevelUp.instance.SetLevel(0);
+            LevelUp.instance.SetStage(0);
             GameOver.instance.HideScreen(0f);
             StartGame.instance.HideScreen(1f);
 
-            Score.instance.SetStages(stages);
-            Score.instance.SetLines(0);
-            Score.instance.SetStage(0, stages.Length);
-            Score.instance.ResetScore();
-
+            Score.instance.ResetScore(stages);
             mTimer = 0f;
 
             mPlayfield.ResetGame();
@@ -122,7 +131,6 @@ namespace TetrisEngine
             var json = System.IO.File.ReadAllText(JSON_PATH);
             mGameSettings = JsonUtility.FromJson<GameSettings>(json);
             mGameSettings.CheckValidSettings();
-            timeToStep = mGameSettings.timeToStep;
         }
 
         //Callback from Playfield to destroy a line in view
@@ -156,14 +164,20 @@ namespace TetrisEngine
             music.Play("stage_complete");
             currentLevel = stage;
             IncreaseSpeed();
-            LevelUp.instance.SetLevel(stage);
-            Score.instance.SetStage(stage, stages.Length);
+            LevelUp.instance.SetStage(stage);
+            Score.instance.SetStage(stage);
         }
 
         private void IncreaseSpeed()
         {
-            timeToStep -= 0.2f;
-            Debug.Log("current speed: " + timeToStep);
+
+            if (timeToStep >= 0.6f)
+            {
+                timeToStep -= 0.2f;
+                Score.instance.SetSpeed();
+            }
+            if (mGameSettings.debugMode)
+                Debug.Log("current speed: " + timeToStep);
         }
 
         //Callback from Playfield to show game over in view
@@ -221,6 +235,7 @@ namespace TetrisEngine
             if (mGameIsOver) return;
 
             mTimer += Time.deltaTime;
+
             if (mTimer > timeToStep)
             {
                 mTimer = 0;
@@ -228,89 +243,75 @@ namespace TetrisEngine
             }
 
             if (mCurrentTetrimino == null) return;
+            int x = mCurrentTetrimino.currentPosition.x;
+            int y = mCurrentTetrimino.currentPosition.y;
 
-            //Rotate Right
+            // Rotates Right
             if (Input.GetKeyDown(mGameSettings.rotateRightKey))
             {
+                Debug.Log(mTimer);
                 music.Play("flip_shape");
-                if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x,
-                                    mCurrentTetrimino.currentPosition.y,
-                                    mCurrentTetrimino,
-                                                    mCurrentTetrimino.NextRotation))
+                if (mPlayfield.IsPossibleMovement(x, y, mCurrentTetrimino, mCurrentTetrimino.NextRotation))
                 {
                     mCurrentTetrimino.currentRotation = mCurrentTetrimino.NextRotation;
                     mRefreshPreview = true;
                 }
             }
 
-            //Rotate Left
+            // Rotates Left
             if (Input.GetKeyDown(mGameSettings.rotateLeftKey))
             {
                 music.Play("flip_shape");
-                if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x,
-                                                  mCurrentTetrimino.currentPosition.y,
-                                                  mCurrentTetrimino,
-                                            mCurrentTetrimino.PreviousRotation))
+                if (mPlayfield.IsPossibleMovement(x, y, mCurrentTetrimino, mCurrentTetrimino.PreviousRotation))
                 {
                     mCurrentTetrimino.currentRotation = mCurrentTetrimino.PreviousRotation;
                     mRefreshPreview = true;
                 }
             }
 
-            //Move piece to the left
+            // Moves piece to the left
             if (Input.GetKeyDown(mGameSettings.moveLeftKey))
             {
                 music.Play("move_shape_left");
-                if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x - 1,
-                                                  mCurrentTetrimino.currentPosition.y,
-                                                  mCurrentTetrimino,
-                                                  mCurrentTetrimino.currentRotation))
+                if (mPlayfield.IsPossibleMovement(x - 1, y, mCurrentTetrimino, mCurrentTetrimino.currentRotation))
                 {
-                    mCurrentTetrimino.currentPosition = new Vector2Int(mCurrentTetrimino.currentPosition.x - 1, mCurrentTetrimino.currentPosition.y);
+                    mCurrentTetrimino.currentPosition = new Vector2Int(x - 1, y);
                     mRefreshPreview = true;
                 }
             }
 
-            //Move piece to the right
+            // Moves piece to the right
             if (Input.GetKeyDown(mGameSettings.moveRightKey))
             {
                 music.Play("move_shape_right");
-                if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x + 1,
-                                                  mCurrentTetrimino.currentPosition.y,
-                                                  mCurrentTetrimino,
-                                                  mCurrentTetrimino.currentRotation))
+                if (mPlayfield.IsPossibleMovement(x + 1, y, mCurrentTetrimino, mCurrentTetrimino.currentRotation))
                 {
-                    mCurrentTetrimino.currentPosition = new Vector2Int(mCurrentTetrimino.currentPosition.x + 1, mCurrentTetrimino.currentPosition.y);
+                    mCurrentTetrimino.currentPosition = new Vector2Int(x + 1, y);
                     mRefreshPreview = true;
                 }
             }
 
-            //Make the piece fall faster
-            //this is the only input with GetKey instead of GetKeyDown, because most of the time, users want to keep this button pressed and make the piece fall
+            // Accelerates fall. 
+            // Using GetKey instead of GetKeyDown, because most of the time, users want to keep this button pressed and make the piece fall
             if (Input.GetKey(mGameSettings.moveDownKey))
             {
-                if (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x,
-                                                  mCurrentTetrimino.currentPosition.y + 1,
-                                                  mCurrentTetrimino,
-                                          mCurrentTetrimino.currentRotation))
+                if (mPlayfield.IsPossibleMovement(x, y + 1, mCurrentTetrimino, mCurrentTetrimino.currentRotation))
                 {
-                    mCurrentTetrimino.currentPosition = new Vector2Int(mCurrentTetrimino.currentPosition.x, mCurrentTetrimino.currentPosition.y + 1);
+                    mCurrentTetrimino.currentPosition = new Vector2Int(x, y + 1);
                 }
             }
 
-            //This part is responsable for rendering the preview piece in the right position
+            // Renders preview tetris piece.
             if (mRefreshPreview)
             {
-                var y = mCurrentTetrimino.currentPosition.y;
-                while (mPlayfield.IsPossibleMovement(mCurrentTetrimino.currentPosition.x,
-                                                          y,
-                                                          mCurrentTetrimino,
-                                                          mCurrentTetrimino.currentRotation))
+                int tempX = mCurrentTetrimino.currentPosition.x;
+                int tempY = mCurrentTetrimino.currentPosition.y;
+                while (mPlayfield.IsPossibleMovement(tempX, tempY, mCurrentTetrimino, mCurrentTetrimino.currentRotation))
                 {
-                    y++;
+                    tempY++;
                 }
 
-                mPreview.ForcePosition(mCurrentTetrimino.currentPosition.x, y - 1);
+                mPreview.ForcePosition(tempX, tempY - 1);
                 mRefreshPreview = false;
             }
         }

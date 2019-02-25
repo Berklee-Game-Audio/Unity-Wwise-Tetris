@@ -19,17 +19,19 @@ public class Score : ScoreScreenType<Score>
         mInternalPoints += points;
         SetLines(mInternalPoints);
     }
-    public void ResetScore()
+    public void ResetScore(int[] stages)
     {
         mInternalPoints = 0;
+        SetStages(stages);
         SetLines(mInternalPoints);
+        ShowScreen(1f);
     }
 
     public override void ShowScreen(float timeToTween = 1f)
     {
         base.ShowScreen(timeToTween);
         StopCoroutine(WaitAndHide());
-        StartCoroutine(WaitAndHide());
+        // StartCoroutine(WaitAndHide());
     }
 
     private IEnumerator WaitAndHide()

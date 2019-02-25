@@ -8,7 +8,7 @@ public class LevelUp : BaseScreen<LevelUp>
     protected Text title;
     private Timer timer;
     private int level;
-    public void SetLevel(int current)
+    public void SetStage(int current)
     {
         level = current;
         title.text = "STAGE " + (level + 1);
