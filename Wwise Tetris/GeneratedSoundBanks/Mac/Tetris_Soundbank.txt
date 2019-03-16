@@ -7,22 +7,30 @@ Event	ID	Name			Wwise Object Path	Notes
 	1146992660	move_shape_left			\Default Work Unit\move_shape_left	
 	1870373793	clear_row			\Default Work Unit\clear_row	
 	2005704188	main_menu			\Default Work Unit\main_menu	
+	2238459845	game_loaded			\Default Work Unit\game_loaded	
 	2497998238	flip_shape			\Default Work Unit\flip_shape	
 	3411202357	round_lose			\Default Work Unit\round_lose	
 	3435819489	stage_complete			\Default Work Unit\stage_complete	
 	3742617664	land_shape			\Default Work Unit\land_shape	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	14811615	stage_number			\Default Work Unit\stage_number	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	13985452	stage_complete	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\stage_complete_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\stage_complete		110720
-	126449204	clear_row	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\clear_row_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\clear_row		109196
-	173384168	game_start	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\game_start_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_start		103090
-	174280160	flip_shape	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\flip_shape_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\flip_shape		121242
-	192040688	main_menu	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\main_menu_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\main_menu		120076
-	430244361	pause_game	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\pause_game_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\pause_game		116708
-	697338976	land_shape	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\land_shape_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\land_shape		99686
-	712877260	move_shape_right	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\move_shape_right_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\move_shape_right		128232
-	720046553	round_win	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\round_win_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\round_win		131728
-	890552291	round_lose	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\round_lose_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\round_lose		138718
-	1004535330	pause_release	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\pause_release_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\pause_release		101866
-	1020061233	move_shape_left	Y:\Desktop\Wwise Tetris\.cache\Mac\SFX\move_shape_left_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\move_shape_left		115124
+	13985452	stage_complete	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\stage_complete_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\stage_complete		110720
+	126449204	clear_row	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\clear_row_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\clear_row		109196
+	173384168	game_start	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\game_start_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_start		103090
+	174280160	flip_shape	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\flip_shape_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\flip_shape		121242
+	192040688	main_menu	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\main_menu_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\main_menu		120076
+	254342850	nw_loop_2	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\nw_loop_2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch\gameplay_part_2_playlist\gameplay_part_2_segment\nw_loop_2		758584
+	430244361	pause_game	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\pause_game_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\pause_game		116708
+	656307854	looping-dark-ambience	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\looping-dark-ambience_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\menu_music_playlist\menu_segment\looping-dark-ambience		47530344
+	697338976	land_shape	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\land_shape_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\land_shape		99686
+	712877260	move_shape_right	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\move_shape_right_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\move_shape_right		128232
+	720046553	round_win	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\round_win_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\round_win		131728
+	797705488	nw_loop_1	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\nw_loop_1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch\gameplay_part_1_playlist\gameplay_part_1_segment\nw_loop_1		379912
+	818851471	nw_loop_3	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\nw_loop_3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch\gameplay_part_3_playlist\gameplay_part_3_segment\nw_loop_3		760348
+	890552291	round_lose	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\round_lose_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\round_lose		138718
+	1004535330	pause_release	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\pause_release_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\pause_release		101866
+	1020061233	move_shape_left	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\move_shape_left_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\move_shape_left		115124
 

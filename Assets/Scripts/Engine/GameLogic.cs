@@ -147,16 +147,23 @@ namespace TetrisEngine
             if (rowsCleared >= stages[stages.Length - 1])
             {
                 SetGameOver(true);
+                music.Play("round_win");
                 return;
             }
-            for (int i = stages.Length - 2; i >= 0; i--)
+
+            if(rowsCleared == stages[currentLevel])
             {
-                if (rowsCleared >= stages[i])
-                {
-                    IncStage(i + 1);
-                    break;
-                }
+                IncStage(currentLevel + 1);
             }
+
+            //for (int i = stages.Length - 2; i >= 0; i--)
+            //{
+            //    if (rowsCleared == stages[i])
+            //    {
+            //        IncStage(i + 1);
+            //        break;
+            //    }
+            //}
         }
 
         public void IncStage(int stage)

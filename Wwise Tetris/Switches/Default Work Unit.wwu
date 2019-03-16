@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{097F2092-F451-4A73-93C0-CA8A22076C2D}" SchemaVersion="89">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{097F2092-F451-4A73-93C0-CA8A22076C2D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{097F2092-F451-4A73-93C0-CA8A22076C2D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="stages" ID="{9B98BCB8-3E29-46FE-BB02-AD354A7BEC74}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="stage_01" ID="{A1A55C35-539A-4E1C-AEFA-847D3CEBC098}"/>
+						<Switch Name="stage_02" ID="{319047F9-74E6-4133-BA97-7C718482DEC0}"/>
+						<Switch Name="stage_03" ID="{F488CA81-2A78-402A-9285-BF9594191A51}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="stage_number" ID="{18A9593B-BCAC-40BA-A539-53A3B42DA320}"/>
+						<Curve Name="" ID="{D9ED7BCC-D3F7-47D3-8BD5-E9E35AB89DF7}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>20</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

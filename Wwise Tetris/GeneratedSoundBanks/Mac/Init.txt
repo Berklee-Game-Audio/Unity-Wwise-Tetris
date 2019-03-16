@@ -1,3 +1,19 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	936729656	stages			\Default Work Unit\stages	
+
+Switch	ID	Name	Switch Group			Notes
+	344719509	stage_01	stages			
+	344719510	stage_02	stages			
+	344719511	stage_03	stages			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	762757699	gameplay_state			\Default Work Unit\gameplay_state	
+
+State	ID	Name	State Group			Notes
+	0	None	gameplay_state			
+	89505537	gameplay	gameplay_state			
+	2607556080	menu	gameplay_state			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

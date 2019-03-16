@@ -15,6 +15,26 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{25C74D75-870A-4614-8A64-8065BCF88BA4}" ShortID="777913865">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game Switch Container" ID="{C8EDAE79-0F91-4FA3-BB3E-94F70C8DC535}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6AEB92EC-4499-4F6A-9278-BF18959FFFB5}" ShortID="686306848">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{6057D18C-EAED-4069-8421-08D348B16F18}" WorkUnitID="{DDEF2F54-0C17-4273-A394-0B9807A33939}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="game_start" ID="{C14C5EC6-F859-4EB2-B602-D3B0373C2CF3}">
@@ -26,6 +46,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="game_start" ID="{4CA83866-C1CB-47B4-A907-9E1CB817D0E9}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{21965C4E-E1FD-4AF3-9BA1-2C828684C40E}" ShortID="160098127">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gameplay" ID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}" WorkUnitID="{DDEF2F54-0C17-4273-A394-0B9807A33939}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{88641419-291E-4428-8BF7-D6FD21FF74F8}" ShortID="734512379">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_number" ID="{18A9593B-BCAC-40BA-A539-53A3B42DA320}" WorkUnitID="{158CF201-52AB-472E-8360-12D4DE76DA5E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -43,6 +85,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{659A8507-84FF-4416-9A50-E949B56FD895}" ShortID="381039222">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{6057D18C-EAED-4069-8421-08D348B16F18}" WorkUnitID="{DDEF2F54-0C17-4273-A394-0B9807A33939}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="round_lose" ID="{881D63C3-8329-41BB-96BD-68061D9687E2}">
@@ -54,6 +106,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="round_lose" ID="{5C4AD955-D584-4D61-A05C-81D6781C70A5}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{ED9F6819-A596-4DE2-838C-42FEB7ECB43B}" ShortID="513839507">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{6057D18C-EAED-4069-8421-08D348B16F18}" WorkUnitID="{DDEF2F54-0C17-4273-A394-0B9807A33939}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -127,6 +189,19 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{934465FD-3686-4B0A-BFE9-DC028467A12C}" ShortID="353614241">
+							<PropertyList>
+								<Property Name="AbsoluteOrRelative" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_number" ID="{18A9593B-BCAC-40BA-A539-53A3B42DA320}" WorkUnitID="{158CF201-52AB-472E-8360-12D4DE76DA5E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="clear_row" ID="{0AE188B1-2008-499B-B683-E9EDE006BE96}">
@@ -166,6 +241,40 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="pause_release" ID="{60925007-1DCC-4E4D-BF87-C03CE42D76A3}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_loaded" ID="{47D9A03F-8B98-4526-A222-148ACFA65E9F}">
+					<ChildrenList>
+						<Action Name="" ID="{6CF3ADFE-CB9C-40BD-8B3A-374B220DB614}" ShortID="306510302">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{6057D18C-EAED-4069-8421-08D348B16F18}" WorkUnitID="{DDEF2F54-0C17-4273-A394-0B9807A33939}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{00981DE7-9660-44E8-B1AD-7AAAE01382DB}" ShortID="762640196">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game Switch Container" ID="{C8EDAE79-0F91-4FA3-BB3E-94F70C8DC535}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5B925E03-0B95-415D-8844-3671F49E8BF9}" ShortID="56028822">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="main_menu" ID="{A2B61545-863B-4BAC-8822-F008540D471A}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

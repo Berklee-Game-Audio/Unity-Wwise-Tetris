@@ -8,6 +8,7 @@
 						<ObjectRef Name="move_shape_left" ID="{AAD54767-8276-401C-ACF9-A2527718B6D6}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="move_shape_right" ID="{CBAADA2E-25BE-40C5-9E0B-EE9C2F6D3415}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="round_lose" ID="{881D63C3-8329-41BB-96BD-68061D9687E2}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="game_loaded" ID="{47D9A03F-8B98-4526-A222-148ACFA65E9F}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="flip_shape" ID="{809E987B-66DC-45D8-8EDC-310B2BCCCCA1}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stage_complete" ID="{2FD75F08-EDB3-497C-94F8-E185CD752B02}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="clear_row" ID="{0AE188B1-2008-499B-B683-E9EDE006BE96}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>

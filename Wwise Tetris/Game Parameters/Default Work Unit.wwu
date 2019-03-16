@@ -24,6 +24,7 @@
 				<GameParameter Name="stage_number" ID="{18A9593B-BCAC-40BA-A539-53A3B42DA320}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

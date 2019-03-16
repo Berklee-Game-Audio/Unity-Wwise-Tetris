@@ -16,19 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 9a4a8a4aa0c90843bda8f9eef6658b88
-    m_lastTime: -8586509931274775808
+    m_lastTime: -8586508362904775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 00d44966a7a16743bf14871356ffdb20
-    m_lastTime: -8586509931274775808
+    m_lastTime: -8586508362904775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 22c8e519e985ef48be392b68059ef0de
-    m_lastTime: -8586509920784775808
+    m_lastTime: -8586488495004775808
     List:
     - name: Tetris_Soundbank
       guid: 7292c28f8c1f114d8cadc05e1ae40205
@@ -43,7 +43,7 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 548dd4a9c4b9754696ef53634eb8a83e
-    m_lastTime: -8586509921034775808
+    m_lastTime: -8586488487424775808
     List:
     - name: clear_row
       guid: b188e10a08209b49b683e9ede006be96
@@ -66,6 +66,18 @@ MonoBehaviour:
       - ElementName: flip_shape
         ObjectType: 3
       Path: Default Work Unit/flip_shape
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: game_loaded
+      guid: 3fa0d947988b2645a222148acfa65e9f
+      id: 2238459845
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: game_loaded
+        ObjectType: 3
+      Path: Default Work Unit/game_loaded
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -193,7 +205,7 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 01f28c15ab522e47836012d4de76da5e
-    m_lastTime: -8586509921034775808
+    m_lastTime: -8586488503774775808
     List:
     - name: level_number
       guid: dabc2e6ba050fe4fb63bbc3219f1bbe3
@@ -235,23 +247,79 @@ MonoBehaviour:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 542fefdd170c7342a3940b9807a33939
-    m_lastTime: -8586509931274775808
-    List: []
+    m_lastTime: -8586488503774775808
+    List:
+    - name: gameplay_state
+      guid: 25001e41fc909747b8f16c4e65d3a879
+      id: 762757699
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: gameplay_state
+        ObjectType: 9
+      Path: Default Work Unit/gameplay_state
+      values:
+      - name: gameplay
+        guid: 69abbcc92b89fd4bbf15f5a3cffafa80
+        id: 89505537
+        PathAndIcons:
+        - ElementName: gameplay
+          ObjectType: 8
+      - name: menu
+        guid: 8cd15760edea6940842108d348b16f18
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: menu
+          ObjectType: 8
+      - name: None
+        guid: 45aaa9d7579d454b99138b181fcec150
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 92207f0951f4734a93c0ca8a22076c2d
-    m_lastTime: -8586509931274775808
-    List: []
+    m_lastTime: -8586488503774775808
+    List:
+    - name: stages
+      guid: b8bc989b293efe46bb02ad354a7bec74
+      id: 936729656
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stages
+        ObjectType: 11
+      Path: Default Work Unit/stages
+      values:
+      - name: stage_01
+        guid: 355ca5a19a531c4eaefa847d3cebc098
+        id: 344719509
+        PathAndIcons:
+        - ElementName: stage_01
+          ObjectType: 10
+      - name: stage_02
+        guid: f9479031e6743341ba977c718482dec0
+        id: 344719510
+        PathAndIcons:
+        - ElementName: stage_02
+          ObjectType: 10
+      - name: stage_03
+        guid: 81ca88f4782a2a409285bf9594191a51
+        id: 344719511
+        PathAndIcons:
+        - ElementName: stage_03
+          ObjectType: 10
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4fa79f91eb1d394190f9f725f6ac6e43
-    m_lastTime: -8586509931274775808
+    m_lastTime: -8586508362904775808
     List: []
   ExpandedItems:
   - /Wwise Tetris
-  - /Wwise Tetris/SoundBanks
-  - /Wwise Tetris/SoundBanks/Default Work Unit
+  - /Wwise Tetris/Events
+  - /Wwise Tetris/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

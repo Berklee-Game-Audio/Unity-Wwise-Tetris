@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Desktop/Wwise Tetris/</ProjectRoot>
-		<SourceFilesRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Desktop/Wwise Tetris/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Desktop/Wwise Tetris/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/</ProjectRoot>
+		<SourceFilesRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Desktop/Wwise Tetris/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row"/>
 				<Event Id="2497998238" Name="flip_shape" ObjectPath="\Events\Default Work Unit\flip_shape"/>
+				<Event Id="2238459845" Name="game_loaded" ObjectPath="\Events\Default Work Unit\game_loaded"/>
 				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start"/>
 				<Event Id="3742617664" Name="land_shape" ObjectPath="\Events\Default Work Unit\land_shape"/>
 				<Event Id="2005704188" Name="main_menu" ObjectPath="\Events\Default Work Unit\main_menu"/>
@@ -55,9 +56,17 @@
 					<ShortName>main_menu.wav</ShortName>
 					<Path>SFX/main_menu_56D34C19.wem</Path>
 				</File>
+				<File Id="254342850" Language="SFX">
+					<ShortName>nw_loop_2.wav</ShortName>
+					<Path>SFX/nw_loop_2_8956FC97.wem</Path>
+				</File>
 				<File Id="430244361" Language="SFX">
 					<ShortName>pause_game.wav</ShortName>
 					<Path>SFX/pause_game_56D34C19.wem</Path>
+				</File>
+				<File Id="656307854" Language="SFX">
+					<ShortName>looping-dark-ambience.wav</ShortName>
+					<Path>SFX/looping-dark-ambience_8956FC97.wem</Path>
 				</File>
 				<File Id="697338976" Language="SFX">
 					<ShortName>land_shape.wav</ShortName>
@@ -70,6 +79,14 @@
 				<File Id="720046553" Language="SFX">
 					<ShortName>round_win.wav</ShortName>
 					<Path>SFX/round_win_56D34C19.wem</Path>
+				</File>
+				<File Id="797705488" Language="SFX">
+					<ShortName>nw_loop_1.wav</ShortName>
+					<Path>SFX/nw_loop_1_8956FC97.wem</Path>
+				</File>
+				<File Id="818851471" Language="SFX">
+					<ShortName>nw_loop_3.wav</ShortName>
+					<Path>SFX/nw_loop_3_8956FC97.wem</Path>
 				</File>
 				<File Id="890552291" Language="SFX">
 					<ShortName>round_lose.wav</ShortName>
