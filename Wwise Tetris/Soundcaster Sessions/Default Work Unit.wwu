@@ -57,7 +57,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="max_height" ID="{7F376673-56E8-4E0D-A1DD-2267D7492411}"/>
-							<Value>50</Value>
+							<Value>25</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="level_number" ID="{6B2EBCDA-50A0-4FFE-B63B-BC3219F1BBE3}"/>

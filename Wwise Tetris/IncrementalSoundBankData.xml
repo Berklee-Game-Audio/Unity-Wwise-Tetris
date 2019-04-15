@@ -4,12 +4,12 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="2011416742" Timestamp="1552757126"/>
-				<File Name="Tetris_Soundbank" Hash="868680824" Timestamp="1552759991"/>
+				<File Name="Tetris_Soundbank" Hash="3949510044" Timestamp="1555354151"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3661449249" Timestamp="1552759991"/>
+				<File Name="" Hash="3661449249" Timestamp="1555354151"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -17,12 +17,12 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="3119002872" Timestamp="1552757124"/>
-				<File Name="Tetris_Soundbank" Hash="868680824" Timestamp="1552759990"/>
+				<File Name="Tetris_Soundbank" Hash="3949510044" Timestamp="1555354150"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3632443139" Timestamp="1552759990"/>
+				<File Name="" Hash="3632443139" Timestamp="1555354150"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

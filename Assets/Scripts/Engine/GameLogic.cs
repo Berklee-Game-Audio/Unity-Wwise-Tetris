@@ -221,7 +221,13 @@ namespace TetrisEngine
             if (mCurrentTetrimino != null)
             {
                 music.Play("land_shape");
+
+                //then send max_height over to Wwise
+                Debug.Log("max_height: " + mCurrentTetrimino.currentPosition.y);
+                music.RTPC("max_height", mCurrentTetrimino.currentPosition.y);
+
                 mCurrentTetrimino.isLocked = true;
+
             }
 
             var tetrimino = mPlayfield.CreateTetrimo();
