@@ -9,7 +9,16 @@ namespace TetrisEngine
     //It is also responsable for calling Playfield.Step
     public class GameLogic : MonoBehaviour
     {
-        private const string JSON_PATH = @"Assets/SupportFiles/GameSettings.json";
+        //private const string JSON_PATH = @"Assets/SupportFiles/GameSettings.json";
+        //private const string JSON_PATH = @"Assets/StreamingAssets/GameSettings.json";
+
+        #if UNITY_EDITOR
+        private string JSON_PATH = @"Assets/StreamingAssets/GameSettings.json";
+        #else
+        private string JSON_PATH = Application.streamingAssetsPath + "/GameSettings.json";
+        #endif
+
+
 
         public GameObject tetriminoBlockPrefab;
         public Transform tetriminoParent;
@@ -82,6 +91,8 @@ namespace TetrisEngine
         // Initiates pooling systems and playfield.
         public void Begin()
         {
+
+            Debug.Log("Game begin");
             mBlockPool.createMoreIfNeeded = true;
             mBlockPool.Initialize(tetriminoBlockPrefab, null);
 
