@@ -147,7 +147,13 @@ namespace TetrisEngine
         //Callback from Playfield to destroy a line in view
         private void DestroyLine(int y)
         {
-            mTetriminos.ForEach(x => x.DestroyLine(y));
+            //mTetriminos.ForEach(x => x.DestroyLine(y));
+
+            for (int i = 0; i < mTetriminos.Count; ++i)
+            {
+                mTetriminos[i].DestroyLine(y);
+            }
+
             mTetriminos.RemoveAll(x => x == null);
 
             Score.instance.AddPoints(mGameSettings.pointsByBreakingLine);
