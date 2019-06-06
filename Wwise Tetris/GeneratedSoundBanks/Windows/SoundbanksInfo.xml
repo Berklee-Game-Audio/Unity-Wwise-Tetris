@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/</ProjectRoot>
-		<SourceFilesRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/msweet/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/</ProjectRoot>
+		<SourceFilesRoot>/Users/msweet/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/msweet/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/msweet/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/msweet/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -36,49 +36,57 @@
 				<Event Id="3435819489" Name="stage_complete" ObjectPath="\Events\Default Work Unit\stage_complete"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="13985452" Language="SFX">
-					<ShortName>stage_complete.wav</ShortName>
-					<Path>SFX/stage_complete_56D34C19.wem</Path>
+				<File Id="106603757" Language="SFX">
+					<ShortName>round_lose.wav</ShortName>
+					<Path>SFX/round_lose_D79FB2B7.wem</Path>
 				</File>
-				<File Id="126449204" Language="SFX">
-					<ShortName>clear_row.wav</ShortName>
-					<Path>SFX/clear_row_56D34C19.wem</Path>
+				<File Id="168330736" Language="SFX">
+					<ShortName>round_win.wav</ShortName>
+					<Path>SFX/round_win_D79FB2B7.wem</Path>
 				</File>
-				<File Id="173384168" Language="SFX">
-					<ShortName>game_start.wav</ShortName>
-					<Path>SFX/game_start_56D34C19.wem</Path>
+				<File Id="169837349" Language="SFX">
+					<ShortName>pause_release.wav</ShortName>
+					<Path>SFX/pause_release_D79FB2B7.wem</Path>
 				</File>
-				<File Id="174280160" Language="SFX">
-					<ShortName>flip_shape.wav</ShortName>
-					<Path>SFX/flip_shape_56D34C19.wem</Path>
-				</File>
-				<File Id="192040688" Language="SFX">
-					<ShortName>main_menu.wav</ShortName>
-					<Path>SFX/main_menu_56D34C19.wem</Path>
+				<File Id="183490134" Language="SFX">
+					<ShortName>pause_game.wav</ShortName>
+					<Path>SFX/pause_game_D79FB2B7.wem</Path>
 				</File>
 				<File Id="254342850" Language="SFX">
 					<ShortName>nw_loop_2.wav</ShortName>
 					<Path>SFX/nw_loop_2_8956FC97.wem</Path>
 				</File>
-				<File Id="430244361" Language="SFX">
-					<ShortName>pause_game.wav</ShortName>
-					<Path>SFX/pause_game_56D34C19.wem</Path>
+				<File Id="286926855" Language="SFX">
+					<ShortName>move_shape_left.wav</ShortName>
+					<Path>SFX/move_shape_left_D79FB2B7.wem</Path>
+				</File>
+				<File Id="365611745" Language="SFX">
+					<ShortName>land_shape.wav</ShortName>
+					<Path>SFX/land_shape_D79FB2B7.wem</Path>
+				</File>
+				<File Id="404726350" Language="SFX">
+					<ShortName>game_start.wav</ShortName>
+					<Path>SFX/game_start_D79FB2B7.wem</Path>
+				</File>
+				<File Id="432806552" Language="SFX">
+					<ShortName>flip_shape.wav</ShortName>
+					<Path>SFX/flip_shape_D79FB2B7.wem</Path>
+				</File>
+				<File Id="555003965" Language="SFX">
+					<ShortName>move_shape_right.wav</ShortName>
+					<Path>SFX/move_shape_right_D79FB2B7.wem</Path>
+				</File>
+				<File Id="577128883" Language="SFX">
+					<ShortName>main_menu.wav</ShortName>
+					<Path>SFX/main_menu_D79FB2B7.wem</Path>
+				</File>
+				<File Id="648398652" Language="SFX">
+					<ShortName>stage_complete.wav</ShortName>
+					<Path>SFX/stage_complete_D79FB2B7.wem</Path>
 				</File>
 				<File Id="656307854" Language="SFX">
 					<ShortName>looping-dark-ambience.wav</ShortName>
 					<Path>SFX/looping-dark-ambience_8956FC97.wem</Path>
-				</File>
-				<File Id="697338976" Language="SFX">
-					<ShortName>land_shape.wav</ShortName>
-					<Path>SFX/land_shape_56D34C19.wem</Path>
-				</File>
-				<File Id="712877260" Language="SFX">
-					<ShortName>move_shape_right.wav</ShortName>
-					<Path>SFX/move_shape_right_56D34C19.wem</Path>
-				</File>
-				<File Id="720046553" Language="SFX">
-					<ShortName>round_win.wav</ShortName>
-					<Path>SFX/round_win_56D34C19.wem</Path>
 				</File>
 				<File Id="797705488" Language="SFX">
 					<ShortName>nw_loop_1.wav</ShortName>
@@ -88,17 +96,9 @@
 					<ShortName>nw_loop_3.wav</ShortName>
 					<Path>SFX/nw_loop_3_8956FC97.wem</Path>
 				</File>
-				<File Id="890552291" Language="SFX">
-					<ShortName>round_lose.wav</ShortName>
-					<Path>SFX/round_lose_56D34C19.wem</Path>
-				</File>
-				<File Id="1004535330" Language="SFX">
-					<ShortName>pause_release.wav</ShortName>
-					<Path>SFX/pause_release_56D34C19.wem</Path>
-				</File>
-				<File Id="1020061233" Language="SFX">
-					<ShortName>move_shape_left.wav</ShortName>
-					<Path>SFX/move_shape_left_56D34C19.wem</Path>
+				<File Id="1036727112" Language="SFX">
+					<ShortName>clear_row.wav</ShortName>
+					<Path>SFX/clear_row_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

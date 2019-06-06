@@ -73,18 +73,5 @@ public static class AkWwiseProjectInfo
 
 		return bDirty;
 	}
-
-	public static void PopulateForMigration()
-	{
-		GetData().Reset();
-		var bDirty = AkWwiseWWUBuilder.Populate();
-		bDirty |= AkWwiseXMLBuilder.Populate();
-		if (bDirty)
-		{
-			UnityEditor.EditorUtility.SetDirty(GetData());
-			UnityEditor.AssetDatabase.SaveAssets();
-			UnityEditor.AssetDatabase.Refresh();
-		}
-	}
 }
 #endif

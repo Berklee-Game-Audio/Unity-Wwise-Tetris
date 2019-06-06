@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{19E5C822-85E9-48EF-BE39-2B68059EF0DE}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{19E5C822-85E9-48EF-BE39-2B68059EF0DE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Tetris_Soundbank" ID="{8FC29272-1F8C-4D11-8CAD-C05E1AE40205}">
+					<ObjectInclusionList>
+						<ObjectRef Name="move_shape_left" ID="{AAD54767-8276-401C-ACF9-A2527718B6D6}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="move_shape_right" ID="{CBAADA2E-25BE-40C5-9E0B-EE9C2F6D3415}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="round_lose" ID="{881D63C3-8329-41BB-96BD-68061D9687E2}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="game_loaded" ID="{47D9A03F-8B98-4526-A222-148ACFA65E9F}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="flip_shape" ID="{809E987B-66DC-45D8-8EDC-310B2BCCCCA1}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stage_complete" ID="{2FD75F08-EDB3-497C-94F8-E185CD752B02}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="clear_row" ID="{0AE188B1-2008-499B-B683-E9EDE006BE96}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="pause_game" ID="{0B307FB9-6810-4B20-9957-9155243BB3C1}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="land_shape" ID="{0B23E043-F646-4CCA-8A64-4825896417D8}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="round_win" ID="{378D31DD-1140-4CF2-9A8D-5D8381FE5AD4}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="pause_release" ID="{B4EC50C9-9C33-4D16-AF85-BC75F5BC37EE}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="game_start" ID="{C14C5EC6-F859-4EB2-B602-D3B0373C2CF3}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="main_menu" ID="{23E1F08E-46FA-4ED3-9449-B0E525F00D66}" WorkUnitID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

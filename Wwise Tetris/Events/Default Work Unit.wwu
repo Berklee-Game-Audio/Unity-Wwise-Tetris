@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" SchemaVersion="89">
+<WwiseDocument Type="WorkUnit" ID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" SchemaVersion="94">
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{A9D48D54-B9C4-4675-96EF-53634EB8A83E}" PersistMode="Standalone">
 			<ChildrenList>
@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="main_menu" ID="{A2B61545-863B-4BAC-8822-F008540D471A}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="main_menu_segment" ID="{5191E19D-F373-4212-A533-5A706B238A67}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -45,7 +45,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="game_start" ID="{4CA83866-C1CB-47B4-A907-9E1CB817D0E9}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="game_start_segment" ID="{8406D72E-5E52-48B5-B7A2-A6708B1FCECA}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -81,7 +81,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="round_win" ID="{B599C515-4B42-4C0B-B36D-46E019314C15}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="round_win_segment" ID="{2D36723A-7B7F-4A12-BD77-B0B437F59228}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -105,7 +105,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="round_lose" ID="{5C4AD955-D584-4D61-A05C-81D6781C70A5}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="round_lose_segment" ID="{5D36AE76-28CF-4D0B-8EF4-CEBC7897CB51}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -123,13 +123,13 @@
 				</Event>
 				<Event Name="flip_shape" ID="{809E987B-66DC-45D8-8EDC-310B2BCCCCA1}">
 					<ChildrenList>
-						<Action Name="" ID="{30694E91-A664-4CB2-A6DA-D5E7F9B067F5}" ShortID="829824068">
+						<Action Name="" ID="{DD4616BD-336E-45AA-A61C-DA3D2AEF3808}" ShortID="141791774">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="35"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="flip_shape" ID="{7FDD4E8C-7552-497A-B909-D25C67F7EFFB}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -137,13 +137,13 @@
 				</Event>
 				<Event Name="move_shape_left" ID="{AAD54767-8276-401C-ACF9-A2527718B6D6}">
 					<ChildrenList>
-						<Action Name="" ID="{432F923F-27B7-4270-ACC6-53228143FAB0}" ShortID="560183680">
+						<Action Name="" ID="{E519E249-2080-414E-BF18-09D18EB04B10}" ShortID="737396242">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="35"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="move_shape_left" ID="{4F36C256-ADBC-4618-BCB8-16DD81F90DCC}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="move_shape_left_trigger" ID="{7B9B1C3B-C98B-4CBE-8BE7-5E3B0F6F3274}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -151,13 +151,13 @@
 				</Event>
 				<Event Name="move_shape_right" ID="{CBAADA2E-25BE-40C5-9E0B-EE9C2F6D3415}">
 					<ChildrenList>
-						<Action Name="" ID="{3131B1F7-8746-4D63-B804-768F4EC27EE9}" ShortID="1037332645">
+						<Action Name="" ID="{3D6C9462-7998-4191-80BE-8990BB29412C}" ShortID="244462569">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="35"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="move_shape_right" ID="{3E3E1AF2-FE77-4116-8481-5FD059338319}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="move_shape_right_trigger" ID="{4D85103F-C064-4A88-9B2F-8F20E9777B1C}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -165,13 +165,13 @@
 				</Event>
 				<Event Name="land_shape" ID="{0B23E043-F646-4CCA-8A64-4825896417D8}">
 					<ChildrenList>
-						<Action Name="" ID="{21AE0E3E-1C07-4568-899F-7B1A037881AF}" ShortID="675508665">
+						<Action Name="" ID="{58C86BE6-D9E0-43E0-9090-AB8F3A2AF076}" ShortID="291161947">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="35"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="land_shape" ID="{6FFDC1A0-6883-4114-AEC1-77DF1F932375}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="land_shape_trigger" ID="{576A5ABB-7ACE-4F8F-85DD-1BE5FF2830AD}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -185,7 +185,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="stage_complete" ID="{0233E049-8A82-45DB-8614-7391DBDC22E1}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="stage_complete_segment" ID="{F1981CE2-5B08-49BB-8C11-337E3922081C}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -206,13 +206,13 @@
 				</Event>
 				<Event Name="clear_row" ID="{0AE188B1-2008-499B-B683-E9EDE006BE96}">
 					<ChildrenList>
-						<Action Name="" ID="{DAE242E4-34BF-4D1D-814E-0C5F428F2240}" ShortID="750724141">
+						<Action Name="" ID="{A80FD059-8E92-4D10-ACF0-C2C2ACBE3AF6}" ShortID="960148552">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="ActionType" Type="int16" Value="35"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="clear_row" ID="{3CD7A17A-98DB-4E58-8309-F4FB11FFCA1C}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="clear_row_trigger" ID="{E09A0590-93C0-45E7-A80A-E3788CB28BB7}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -226,7 +226,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="pause_game" ID="{7DC7ADBB-9648-4C84-9D87-336747948904}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="pause_game_segment" ID="{8EE84CBF-9E36-4C13-826B-196BA82AF660}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -240,7 +240,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="pause_release" ID="{60925007-1DCC-4E4D-BF87-C03CE42D76A3}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="pause_release_segment" ID="{9C100978-342F-4EBF-80E8-753BEB54B02B}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -274,7 +274,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="main_menu" ID="{A2B61545-863B-4BAC-8822-F008540D471A}" WorkUnitID="{1840F0FF-6405-4756-A8D5-8A96A6D4C458}"/>
+									<ObjectRef Name="main_menu_segment" ID="{5191E19D-F373-4212-A533-5A706B238A67}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

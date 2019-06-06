@@ -67,6 +67,15 @@ namespace AK
         static const AkUniqueID STAGE_NUMBER = 14811615U;
     } // namespace GAME_PARAMETERS
 
+    namespace TRIGGERS
+    {
+        static const AkUniqueID CLEAR_ROW_TRIGGER = 3249509688U;
+        static const AkUniqueID FLIP_SHAPE_TRIGGER = 750315547U;
+        static const AkUniqueID LAND_SHAPE_TRIGGER = 2925865545U;
+        static const AkUniqueID MOVE_SHAPE_LEFT_TRIGGER = 1337504389U;
+        static const AkUniqueID MOVE_SHAPE_RIGHT_TRIGGER = 2830854102U;
+    } // namespace TRIGGERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

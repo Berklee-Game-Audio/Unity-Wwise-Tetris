@@ -72,7 +72,8 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 		"UserSettings.m_SpatialAudioSettings.m_PoolSize",
 		"UserSettings.m_SpatialAudioSettings.m_MaxSoundPropagationDepth",
 		"UserSettings.m_SpatialAudioSettings.m_DiffractionFlags",
-		"CommsSettings.m_PoolSize",
+        "UserSettings.m_SpatialAudioSettings.m_MovementThreshold",
+        "CommsSettings.m_PoolSize",
 		"CommsSettings.m_DiscoveryBroadcastPort",
 		"CommsSettings.m_CommandPort",
 		"CommsSettings.m_NotificationPort",
@@ -241,7 +242,7 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 		for (var i = 0; i < instance.Count; ++i)
 		{
 			var platformSettings = instance.PlatformSettingsList[i];
-			if (platformSettings && (string.Compare(platformName, instance.PlatformSettingsNameList[i], true) == 0))
+			if (platformSettings && (string.Equals(platformName, instance.PlatformSettingsNameList[i], System.StringComparison.OrdinalIgnoreCase)))
 				return platformSettings;
 		}
 
@@ -332,7 +333,7 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 
 		AkCallbackManager.Init(ActivePlatformSettings.CallbackManagerInitializationSettings);
 		UnityEngine.Debug.Log("WwiseUnity: Sound engine initialized successfully.");
-		LoadInitBank();
+		AkBankManager.LoadInitBank();
 		return true;
 	}
 
@@ -341,21 +342,11 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 		if (isPlaying)
 		{
 			AkSoundEngine.ClearBanks();
-			LoadInitBank();
+			AkBankManager.LoadInitBank();
 		}
 
 		AkCallbackManager.Init(ActivePlatformSettings.CallbackManagerInitializationSettings);
 		return true;
-	}
-
-	private static void LoadInitBank()
-	{
-		AkBankManager.Reset();
-
-		uint BankID;
-		var result = AkSoundEngine.LoadBank("Init.bnk", AkSoundEngine.AK_DEFAULT_POOL_ID, out BankID);
-		if (result != AKRESULT.AK_Success)
-			UnityEngine.Debug.LogError("WwiseUnity: Failed load Init.bnk with result: " + result);
 	}
 
 	public static void TerminateSoundEngine()

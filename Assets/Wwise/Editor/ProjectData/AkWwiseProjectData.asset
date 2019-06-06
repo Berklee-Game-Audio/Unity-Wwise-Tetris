@@ -15,20 +15,23 @@ MonoBehaviour:
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 9a4a8a4aa0c90843bda8f9eef6658b88
-    m_lastTime: -8586508362904775808
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417747334775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 00d44966a7a16743bf14871356ffdb20
-    m_lastTime: -8586508362904775808
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417747334775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 22c8e519e985ef48be392b68059ef0de
-    m_lastTime: -8586488495004775808
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417747334775808
     List:
     - name: Tetris_Soundbank
       guid: 7292c28f8c1f114d8cadc05e1ae40205
@@ -42,8 +45,9 @@ MonoBehaviour:
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 548dd4a9c4b9754696ef53634eb8a83e
-    m_lastTime: -8586488487424775808
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417733004775808
     List:
     - name: clear_row
       guid: b188e10a08209b49b683e9ede006be96
@@ -204,8 +208,9 @@ MonoBehaviour:
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 01f28c15ab522e47836012d4de76da5e
-    m_lastTime: -8586488503774775808
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417747334775808
     List:
     - name: level_number
       guid: dabc2e6ba050fe4fb63bbc3219f1bbe3
@@ -246,8 +251,9 @@ MonoBehaviour:
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 542fefdd170c7342a3940b9807a33939
-    m_lastTime: -8586488503774775808
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417747334775808
     List:
     - name: gameplay_state
       guid: 25001e41fc909747b8f16c4e65d3a879
@@ -277,11 +283,18 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: None
           ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal:
+      - 
+      - 
+      - 
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 92207f0951f4734a93c0ca8a22076c2d
-    m_lastTime: -8586488503774775808
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417747334775808
     List:
     - name: stages
       guid: b8bc989b293efe46bb02ad354a7bec74
@@ -311,15 +324,64 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: stage_03
           ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal:
+      - 
+      - 
+      - 
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
-    guid: 4fa79f91eb1d394190f9f725f6ac6e43
-    m_lastTime: -8586508362904775808
-    List: []
-  ExpandedItems:
-  - /Wwise Tetris
-  - /Wwise Tetris/Events
-  - /Wwise Tetris/Events/Default Work Unit
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586417735844775808
+    List:
+    - name: clear_row_trigger
+      guid: 90059ae0c093e745a80ae3788cb28bb7
+      id: 3249509688
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: clear_row_trigger
+        ObjectType: 14
+      Path: Default Work Unit/clear_row_trigger
+    - name: flip_shape_trigger
+      guid: 342e436230bf814bae26e60d1ac53b21
+      id: 750315547
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: flip_shape_trigger
+        ObjectType: 14
+      Path: Default Work Unit/flip_shape_trigger
+    - name: land_shape_trigger
+      guid: bb5a6a57ce7a8f4f85dd1be5ff2830ad
+      id: 2925865545
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: land_shape_trigger
+        ObjectType: 14
+      Path: Default Work Unit/land_shape_trigger
+    - name: move_shape_left_trigger
+      guid: 3b1c9b7b8bc9be4c8be75e3b0f6f3274
+      id: 1337504389
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: move_shape_left_trigger
+        ObjectType: 14
+      Path: Default Work Unit/move_shape_left_trigger
+    - name: move_shape_right_trigger
+      guid: 3f10854d64c0884a9b2f8f20e9777b1c
+      id: 2830854102
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: move_shape_right_trigger
+        ObjectType: 14
+      Path: Default Work Unit/move_shape_right_trigger
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -3,26 +3,26 @@
 	<Platform GUID="{9677E815-D5B8-416D-8A94-05B61161E1E8}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2011416742" Timestamp="1552757126"/>
-				<File Name="Tetris_Soundbank" Hash="3949510044" Timestamp="1555354151"/>
+				<File Name="Init" Hash="4170271649" Timestamp="1559833598"/>
+				<File Name="Tetris_Soundbank" Hash="2933325706" Timestamp="1559833598"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3661449249" Timestamp="1555354151"/>
+				<File Name="" Hash="3255616290" Timestamp="1559833598"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{7662D538-5A82-4F81-8B48-8F1338B31CD4}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="3119002872" Timestamp="1552757124"/>
-				<File Name="Tetris_Soundbank" Hash="3949510044" Timestamp="1555354150"/>
+				<File Name="Init" Hash="3190232039" Timestamp="1559833597"/>
+				<File Name="Tetris_Soundbank" Hash="2933325706" Timestamp="1559833597"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3632443139" Timestamp="1555354150"/>
+				<File Name="" Hash="3277777208" Timestamp="1559833597"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
