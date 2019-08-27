@@ -796,6 +796,13 @@
 							</EntryList>
 						</MusicSwitchContainer>
 						<MusicSegment Name="game_start_segment" ID="{8406D72E-5E52-48B5-B7A2-A6708B1FCECA}" ShortID="99668578">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B98C6796-7516-45E5-AA26-88CC77AB0511}"/>
