@@ -2,16 +2,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Timers;
 using System;
-public class LevelUp : BaseScreen<LevelUp>
+public class StageUp : BaseScreen<StageUp>
 {
     [SerializeField]
     protected Text title;
     private Timer timer;
-    private int level;
-    public void SetLevel(int current)
+    private int stage;
+    public void SetStage(int current)
     {
-        level = current;
-        title.text = "LEVEL " + (level + 1);
+        //Debug.Log("SetStage: " + current);
+        stage = current;
+        title.text = "STAGE " + (stage + 1);
         base.ShowScreen(1f);
 
         timer = new Timer(2000);

@@ -29,9 +29,12 @@ namespace TetrisEngine
 
         private float timeToStep = 1f;
 
-        [Header("Set rows cleared as game stages.")]
+        [Header("Set the number of levels:")]
+        public int numberOfLevels = 1;
+        [Header("Set rows cleared as game stages:")]
         public int[] stages = new int[3];
         private int currentLevel = 0;
+        private int currentStage = 0;
         private GameSettings mGameSettings;
         private Playfield mPlayfield;
         private Wwise music;
@@ -61,7 +64,7 @@ namespace TetrisEngine
             music = ScriptableObject.CreateInstance("Wwise") as Wwise;
 
             GameOver.instance.HideScreen(0f);
-            LevelUp.instance.HideScreen(0f);
+            StageUp.instance.HideScreen(0f);
             StartGame.instance.ShowScreen(0f);
             Score.instance.HideScreen(0f);
 
@@ -117,7 +120,7 @@ namespace TetrisEngine
         public void RestartGame()
         {
             music.Play("game_start");
-            LevelUp.instance.SetStage(0);
+            StageUp.instance.SetStage(0);
             GameOver.instance.HideScreen(0f);
             StartGame.instance.HideScreen(1f);
 
@@ -131,6 +134,7 @@ namespace TetrisEngine
             CreateTetrimino();
             mGameIsOver = false;
         }
+
 
         private void LoadSettings()
         {
@@ -168,9 +172,9 @@ namespace TetrisEngine
                 return;
             }
 
-            if(rowsCleared == stages[currentLevel])
+            if(rowsCleared == stages[currentStage])
             {
-                IncStage(currentLevel + 1);
+                IncStage(currentStage + 1);
             }
 
             //for (int i = stages.Length - 2; i >= 0; i--)
@@ -185,10 +189,11 @@ namespace TetrisEngine
 
         public void IncStage(int stage)
         {
+            Debug.Log("IncStage");
             music.Play("stage_complete");
-            currentLevel = stage;
+            currentStage = stage;
             IncreaseSpeed();
-            LevelUp.instance.SetStage(stage);
+            StageUp.instance.SetStage(stage);
             Score.instance.SetStage(stage);
         }
 
