@@ -61,11 +61,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="level_number" ID="{6B2EBCDA-50A0-4FFE-B63B-BC3219F1BBE3}"/>
-							<Value>50</Value>
+							<Value>6.77670716401287E-316</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="menu" ID="{6057D18C-EAED-4069-8421-08D348B16F18}"/>
+						<CurrentStateRef Name="gameplay" ID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="stage_03" ID="{F488CA81-2A78-402A-9285-BF9594191A51}"/>

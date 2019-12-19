@@ -62,7 +62,7 @@ namespace TetrisEngine
         public void Start()
         {
             music = ScriptableObject.CreateInstance("Wwise") as Wwise;
-
+            music.RTPC("level_number", (currentLevel + 1));
             GameOver.instance.HideScreen(0f);
             StageUp.instance.HideScreen(0f);
             StartGame.instance.ShowScreen(0f);
@@ -78,6 +78,37 @@ namespace TetrisEngine
                 Begin();
                 return;
             }
+
+        }
+
+        public void Start2()
+        {
+            music.RTPC("level_number", (currentLevel + 1));
+            music.Play("game_start");
+            StageUp.instance.SetStage(0, currentLevel);
+            GameOver.instance.HideScreen(0f);
+            StartGame.instance.HideScreen(1f);
+
+            Score.instance.ResetScore(stages);
+            mTimer = 0f;
+
+            mPlayfield.ResetGame();
+            mTetriminoPool.ReleaseAll();
+            mTetriminos.Clear();
+
+            CreateTetrimino();
+            mGameIsOver = false;
+
+            IncreaseSpeed();
+            IncreaseSpeed();
+            IncreaseSpeed();
+            IncreaseSpeed();
+            IncreaseSpeed();
+            IncreaseSpeed();
+            IncreaseSpeed();
+            IncreaseSpeed();
+            IncreaseSpeed();
+
 
         }
 
@@ -115,12 +146,35 @@ namespace TetrisEngine
             RestartGame();
         }
 
+        public void BeginNewLevel()
+        {
+
+            Debug.Log("Game BeginNewLevel");
+            mBlockPool.createMoreIfNeeded = true;
+            mBlockPool.Initialize(tetriminoBlockPrefab, null);
+
+            mTetriminoPool.createMoreIfNeeded = true;
+            mTetriminoPool.Initialize(new GameObject("BlockHolder", typeof(RectTransform)), tetriminoParent);
+            mTetriminoPool.OnObjectCreationCallBack += x =>
+            {
+                x.OnDestroyTetrimoView = DestroyTetrimino;
+                x.blockPool = mBlockPool;
+            };
+
+            //mPlayfield = new Playfield(mGameSettings);
+            mPlayfield.OnCurrentPieceReachBottom = CreateTetrimino;
+            mPlayfield.OnGameOver = SetGameOver;
+            mPlayfield.OnDestroyLine = DestroyLine;
+
+            RestartGame();
+        }
+
         //Called when the game starts and when user click Restart Game on GameOver screen
         //Responsable for restaring all necessary components
         public void RestartGame()
         {
             music.Play("game_start");
-            StageUp.instance.SetStage(0);
+            StageUp.instance.SetStage(0, currentLevel);
             GameOver.instance.HideScreen(0f);
             StartGame.instance.HideScreen(1f);
 
@@ -167,8 +221,15 @@ namespace TetrisEngine
             music.RTPC("score", Score.instance.PlayerScore);
             if (rowsCleared >= stages[stages.Length - 1])
             {
+                
+                //rowsCleared = 0;
+                
+                //if (currentLevel > numberOfLevels)
+                //{
                 SetGameOver(true);
                 music.Play("round_win");
+                currentLevel++;
+                
                 return;
             }
 
@@ -193,7 +254,7 @@ namespace TetrisEngine
             music.Play("stage_complete");
             currentStage = stage;
             IncreaseSpeed();
-            StageUp.instance.SetStage(stage);
+            StageUp.instance.SetStage(stage, currentLevel);
             Score.instance.SetStage(stage);
         }
 
@@ -217,13 +278,18 @@ namespace TetrisEngine
             if (isWin)
             {
                 music.Play("round_win");
+                // if more than one level then levelup
+                if(currentLevel < numberOfLevels)
+                {
+                    //currentLevel++;
+                }
             }
             else
             {
                 music.Play("round_lose");
             }
 
-            GameOver.instance.ShowScreen(isWin, stages.Length);
+            GameOver.instance.ShowScreen(isWin, stages.Length, currentLevel == (numberOfLevels - 1), currentLevel);
         }
 
         //Call to the engine to create a new piece and create a representation of the random piece in view

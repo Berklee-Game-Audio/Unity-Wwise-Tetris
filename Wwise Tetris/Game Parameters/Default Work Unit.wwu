@@ -12,7 +12,6 @@
 				<GameParameter Name="level_number" ID="{6B2EBCDA-50A0-4FFE-B63B-BC3219F1BBE3}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1"/>
-						<Property Name="Max" Type="Real64" Value="1000"/>
 						<Property Name="Min" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>

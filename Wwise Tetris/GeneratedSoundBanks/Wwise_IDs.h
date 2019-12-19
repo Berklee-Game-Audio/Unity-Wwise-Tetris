@@ -45,6 +45,25 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace LEVEL
+        {
+            static const AkUniqueID GROUP = 2782712965U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID LEVEL_1 = 1290008369U;
+                static const AkUniqueID LEVEL_2 = 1290008370U;
+                static const AkUniqueID LEVEL_3 = 1290008371U;
+                static const AkUniqueID LEVEL_4 = 1290008372U;
+                static const AkUniqueID LEVEL_5 = 1290008373U;
+                static const AkUniqueID LEVEL_6 = 1290008374U;
+                static const AkUniqueID LEVEL_7 = 1290008375U;
+                static const AkUniqueID LEVEL_8 = 1290008376U;
+                static const AkUniqueID LEVEL_9 = 1290008377U;
+                static const AkUniqueID LEVEL_10 = 1004413459U;
+            } // namespace SWITCH
+        } // namespace LEVEL
+
         namespace STAGES
         {
             static const AkUniqueID GROUP = 936729656U;

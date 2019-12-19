@@ -8,11 +8,11 @@ public class StageUp : BaseScreen<StageUp>
     protected Text title;
     private Timer timer;
     private int stage;
-    public void SetStage(int current)
+    public void SetStage(int current, int level)
     {
         //Debug.Log("SetStage: " + current);
         stage = current;
-        title.text = "STAGE " + (stage + 1);
+        title.text = "LEVEL " + (level + 1) + "\nSTAGE " + (stage + 1);
         base.ShowScreen(1f);
 
         timer = new Timer(2000);

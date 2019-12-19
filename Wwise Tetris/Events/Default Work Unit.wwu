@@ -283,6 +283,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{4287278C-42D4-4D66-8D36-50AF8A14C038}" ShortID="563753558">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="land_shape_trigger" ID="{576A5ABB-7ACE-4F8F-85DD-1BE5FF2830AD}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

@@ -9,9 +9,9 @@ public class GameOver : ScoreScreenType<GameOver>
         base.ShowScreen(timeToTween);
     }
 
-    public void ShowScreen(bool isWin, int levels, float timeToTween = TIME_TO_TWEEN)
+    public void ShowScreen(bool isWin, int levels, bool isDone, float timeToTween = TIME_TO_TWEEN)
     {
-        SetLines(Score.instance.PlayerScore, isWin, levels);
+        SetLines(Score.instance.PlayerScore, isWin, levels, isDone );
         base.ShowScreen(timeToTween);
     }
 }
