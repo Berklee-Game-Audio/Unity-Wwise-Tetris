@@ -38,6 +38,7 @@ namespace AK
             {
                 static const AkUniqueID GAMEPLAY = 89505537U;
                 static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace GAMEPLAY_STATE
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" SchemaVersion="97">
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" PersistMode="Standalone">
 			<ChildrenList>
@@ -43,9 +43,12 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="looping-dark-ambience" ID="{22A34321-AC2D-449B-B29B-E1C0441E56AE}" ShortID="656307854">
+												<AudioFileSource Name="looping-dark-ambience" ID="{22A34321-AC2D-449B-B29B-E1C0441E56AE}">
 													<Language>SFX</Language>
 													<AudioFile>looping-dark-ambience.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="656307854"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -149,9 +152,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="nw_loop_1" ID="{C854C7DF-CF1B-4268-9D09-1641E9D09E91}" ShortID="797705488">
+														<AudioFileSource Name="nw_loop_1" ID="{C854C7DF-CF1B-4268-9D09-1641E9D09E91}">
 															<Language>SFX</Language>
 															<AudioFile>nw_loop_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="797705488"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -248,9 +254,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="nw_loop_2" ID="{D191FE76-207F-4926-8458-3E352E2E1C5C}" ShortID="254342850">
+														<AudioFileSource Name="nw_loop_2" ID="{D191FE76-207F-4926-8458-3E352E2E1C5C}">
 															<Language>SFX</Language>
 															<AudioFile>nw_loop_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="254342850"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -347,9 +356,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="nw_loop_3" ID="{7EC20580-4E4B-4B15-92BD-DCBC61BDACFA}" ShortID="818851471">
+														<AudioFileSource Name="nw_loop_3" ID="{7EC20580-4E4B-4B15-92BD-DCBC61BDACFA}">
 															<Language>SFX</Language>
 															<AudioFile>nw_loop_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="818851471"/>
+															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -433,7 +445,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="flip_shape" ID="{AD2487BE-C650-42DF-A2D9-8A7A8AAD0EE3}" ShortID="432806552">
+												<AudioFileSource Name="flip_shape" ID="{AD2487BE-C650-42DF-A2D9-8A7A8AAD0EE3}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -442,6 +454,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>flip_shape.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="432806552"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -495,7 +510,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="clear_row" ID="{66E5FD1F-F4D9-44D9-89C6-EEBE48062585}" ShortID="1036727112">
+												<AudioFileSource Name="clear_row" ID="{66E5FD1F-F4D9-44D9-89C6-EEBE48062585}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -504,6 +519,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>clear_row.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1036727112"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -557,7 +575,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="move_shape_left" ID="{DCB1886A-663E-4A96-8DA5-E5273CF9DBD7}" ShortID="286926855">
+												<AudioFileSource Name="move_shape_left" ID="{DCB1886A-663E-4A96-8DA5-E5273CF9DBD7}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -566,6 +584,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>move_shape_left.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="286926855"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -619,7 +640,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="land_shape" ID="{16488CBE-35A4-4754-B704-562A0628C635}" ShortID="365611745">
+												<AudioFileSource Name="land_shape" ID="{16488CBE-35A4-4754-B704-562A0628C635}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -628,6 +649,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>land_shape.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="365611745"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -681,7 +705,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="move_shape_right" ID="{D3EECFA6-3CD8-4E4A-9071-916752FE72F2}" ShortID="555003965">
+												<AudioFileSource Name="move_shape_right" ID="{D3EECFA6-3CD8-4E4A-9071-916752FE72F2}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -690,6 +714,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>move_shape_right.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="555003965"/>
+													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
@@ -819,7 +846,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="game_start" ID="{8B084353-0E2E-4B82-95F9-A42DA2B4F2F5}" ShortID="404726350">
+										<AudioFileSource Name="game_start" ID="{8B084353-0E2E-4B82-95F9-A42DA2B4F2F5}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -828,6 +855,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>game_start.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404726350"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -881,7 +911,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="main_menu" ID="{752C7455-596C-4584-B648-2C2BEF5FE128}" ShortID="577128883">
+										<AudioFileSource Name="main_menu" ID="{752C7455-596C-4584-B648-2C2BEF5FE128}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -890,6 +920,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>main_menu.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="577128883"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -943,7 +976,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="pause_game" ID="{CAB4247A-66B1-494A-A372-CEEF3C37AD7D}" ShortID="183490134">
+										<AudioFileSource Name="pause_game" ID="{CAB4247A-66B1-494A-A372-CEEF3C37AD7D}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -952,6 +985,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>pause_game.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="183490134"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -1005,7 +1041,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="pause_release" ID="{11E01DF5-45AA-428A-8EF3-B90DEB0DEFC5}" ShortID="169837349">
+										<AudioFileSource Name="pause_release" ID="{11E01DF5-45AA-428A-8EF3-B90DEB0DEFC5}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -1014,6 +1050,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>pause_release.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="169837349"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -1067,7 +1106,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="round_lose" ID="{67DD74EF-3288-4076-A086-36480B54BA18}" ShortID="106603757">
+										<AudioFileSource Name="round_lose" ID="{67DD74EF-3288-4076-A086-36480B54BA18}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -1076,6 +1115,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>round_lose.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="106603757"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -1129,7 +1171,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="round_win" ID="{4D664D7D-32EB-43DF-99EB-3166A29AFACD}" ShortID="168330736">
+										<AudioFileSource Name="round_win" ID="{4D664D7D-32EB-43DF-99EB-3166A29AFACD}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -1138,6 +1180,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>round_win.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="168330736"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
@@ -1191,7 +1236,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="stage_complete" ID="{974F6395-4F10-47C4-A29E-2A541FED9A4F}" ShortID="648398652">
+										<AudioFileSource Name="stage_complete" ID="{974F6395-4F10-47C4-A29E-2A541FED9A4F}">
 											<PropertyList>
 												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -1200,6 +1245,9 @@
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>stage_complete.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="648398652"/>
+											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>

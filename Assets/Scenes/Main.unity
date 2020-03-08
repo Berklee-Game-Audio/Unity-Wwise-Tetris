@@ -433,7 +433,6 @@ MonoBehaviour:
   defaultPoolSize: 0
   lowerPoolSize: 0
   streamingPoolSize: 0
-  preparePoolSize: 0
   memoryCutoffThreshold: 0
   monitorPoolSize: 0
   monitorQueuePoolSize: 0
@@ -2412,7 +2411,7 @@ MonoBehaviour:
     type: 3}
   tetriminoParent: {fileID: 897948402}
   numberOfLevels: 2
-  stages: 010000000200000003000000
+  stages: 030000000600000009000000
   enableStartScreen: 1
 --- !u!4 &1997274774
 Transform:

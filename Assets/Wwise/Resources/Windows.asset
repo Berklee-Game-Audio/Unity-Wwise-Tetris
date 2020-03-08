@@ -40,6 +40,7 @@ MonoBehaviour:
   - UserSettings.m_SpatialAudioSettings.m_PoolSize
   - UserSettings.m_SpatialAudioSettings.m_MaxSoundPropagationDepth
   - UserSettings.m_SpatialAudioSettings.m_DiffractionFlags
+  - UserSettings.m_SpatialAudioSettings.m_MovementThreshold
   - CommsSettings.m_PoolSize
   - CommsSettings.m_DiscoveryBroadcastPort
   - CommsSettings.m_CommandPort
@@ -58,6 +59,7 @@ MonoBehaviour:
   - AdvancedSettings.m_MaximumHardwareTimeoutMs
   - AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowAttenuationFactor
   - AdvancedSettings.m_SpatialAudioSettings.m_DiffractionShadowDegrees
+  - AdvancedSettings.m_RenderDuringFocusLoss
   UserSettings:
     m_BasePath: Audio/GeneratedSoundBanks
     m_StartupLanguage: English(US)
@@ -88,6 +90,7 @@ MonoBehaviour:
       m_PoolSize: 4194304
       m_MaxSoundPropagationDepth: 8
       m_DiffractionFlags: -1
+      m_MovementThreshold: 1
   AdvancedSettings:
     m_IOMemorySize: 2097152
     m_TargetAutoStreamBufferLengthMs: 380
@@ -102,6 +105,7 @@ MonoBehaviour:
     m_SpatialAudioSettings:
       m_DiffractionShadowAttenuationFactor: 2
       m_DiffractionShadowDegrees: 30
+    m_RenderDuringFocusLoss: 0
     m_AudioAPI: -1
     m_GlobalFocus: 1
   CommsSettings:

@@ -12,14 +12,443 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005ca9d31caf84c5aad59cf9af677237, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052864775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052864775808
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052864775808
+    List:
+    - name: Tetris_Soundbank
+      guid: 7292c28f8c1f114d8cadc05e1ae40205
+      id: 3052682920
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tetris_Soundbank
+        ObjectType: 7
+      Path: Default Work Unit/Tetris_Soundbank
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052834775808
+    List:
+    - name: clear_row
+      guid: b188e10a08209b49b683e9ede006be96
+      id: 1870373793
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: clear_row
+        ObjectType: 3
+      Path: Default Work Unit/clear_row
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: flip_shape
+      guid: 7b989e80dc66d8458edc310b2bcccca1
+      id: 2497998238
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: flip_shape
+        ObjectType: 3
+      Path: Default Work Unit/flip_shape
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: game_loaded
+      guid: 3fa0d947988b2645a222148acfa65e9f
+      id: 2238459845
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: game_loaded
+        ObjectType: 3
+      Path: Default Work Unit/game_loaded
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: game_start
+      guid: c65e4cc159f8b24eb602d3b0373c2cf3
+      id: 733168346
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: game_start
+        ObjectType: 3
+      Path: Default Work Unit/game_start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: land_shape
+      guid: 43e0230b46f6ca4c8a644825896417d8
+      id: 3742617664
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: land_shape
+        ObjectType: 3
+      Path: Default Work Unit/land_shape
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: main_menu
+      guid: 8ef0e123fa46d34e9449b0e525f00d66
+      id: 2005704188
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: main_menu
+        ObjectType: 3
+      Path: Default Work Unit/main_menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: move_shape_left
+      guid: 6747d5aa76821c40acf9a2527718b6d6
+      id: 1146992660
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: move_shape_left
+        ObjectType: 3
+      Path: Default Work Unit/move_shape_left
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: move_shape_right
+      guid: 2edaaacbbe25c5409e0bee9c2f6d3415
+      id: 898688307
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: move_shape_right
+        ObjectType: 3
+      Path: Default Work Unit/move_shape_right
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: pause_game
+      guid: b97f300b1068204b99579155243bb3c1
+      id: 528278262
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: pause_game
+        ObjectType: 3
+      Path: Default Work Unit/pause_game
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: pause_release
+      guid: c950ecb4339c164daf85bc75f5bc37ee
+      id: 1119896719
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: pause_release
+        ObjectType: 3
+      Path: Default Work Unit/pause_release
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: round_lose
+      guid: c3631d882983bb4196bd68061d9687e2
+      id: 3411202357
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: round_lose
+        ObjectType: 3
+      Path: Default Work Unit/round_lose
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: round_win
+      guid: dd318d374011f24c9a8d5d8381fe5ad4
+      id: 361697008
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: round_win
+        ObjectType: 3
+      Path: Default Work Unit/round_win
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: stage_complete
+      guid: 085fd72fb3ed7c4994f8e185cd752b02
+      id: 3435819489
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stage_complete
+        ObjectType: 3
+      Path: Default Work Unit/stage_complete
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052834775808
+    List:
+    - name: level_number
+      guid: dabc2e6ba050fe4fb63bbc3219f1bbe3
+      id: 4014985419
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: level_number
+        ObjectType: 13
+      Path: Default Work Unit/level_number
+    - name: max_height
+      guid: 7366377fe8560d4ea1dd2267d7492411
+      id: 3817197105
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: max_height
+        ObjectType: 13
+      Path: Default Work Unit/max_height
+    - name: score
+      guid: ebb082d89fe30b4bbe2beecffa02216c
+      id: 2398231425
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: score
+        ObjectType: 13
+      Path: Default Work Unit/score
+    - name: stage_number
+      guid: 3b59a918acbcba40a53953a3b42da320
+      id: 14811615
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stage_number
+        ObjectType: 13
+      Path: Default Work Unit/stage_number
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052864775808
+    List:
+    - name: gameplay_state
+      guid: 25001e41fc909747b8f16c4e65d3a879
+      id: 762757699
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: gameplay_state
+        ObjectType: 9
+      Path: Default Work Unit/gameplay_state
+      values:
+      - name: gameplay
+        guid: 69abbcc92b89fd4bbf15f5a3cffafa80
+        id: 89505537
+        PathAndIcons:
+        - ElementName: gameplay
+          ObjectType: 8
+      - name: menu
+        guid: 8cd15760edea6940842108d348b16f18
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: menu
+          ObjectType: 8
+      - name: None
+        guid: 45aaa9d7579d454b99138b181fcec150
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052834775808
+    List:
+    - name: level
+      guid: 818e9d5281448d4189c54a2d8938fad9
+      id: 2782712965
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: level
+        ObjectType: 11
+      Path: Default Work Unit/level
+      values:
+      - name: level_1
+        guid: 92f523fbaae7a549b9f26a19397e0d4d
+        id: 1290008369
+        PathAndIcons:
+        - ElementName: level_1
+          ObjectType: 10
+      - name: level_10
+        guid: e5ada65d96c3604e9b8e39e8e71a7074
+        id: 1004413459
+        PathAndIcons:
+        - ElementName: level_10
+          ObjectType: 10
+      - name: level_2
+        guid: fc76efea1ea72f41a7c127aac6ff3707
+        id: 1290008370
+        PathAndIcons:
+        - ElementName: level_2
+          ObjectType: 10
+      - name: level_3
+        guid: 74d2e3feb7ba7e4dbf1cc3fd73e6a435
+        id: 1290008371
+        PathAndIcons:
+        - ElementName: level_3
+          ObjectType: 10
+      - name: level_4
+        guid: 29334eaecf06eb4b84581ff65d55ffc5
+        id: 1290008372
+        PathAndIcons:
+        - ElementName: level_4
+          ObjectType: 10
+      - name: level_5
+        guid: 7187a66d55aab14a802d22b4a2f929db
+        id: 1290008373
+        PathAndIcons:
+        - ElementName: level_5
+          ObjectType: 10
+      - name: level_6
+        guid: 06641b458a41774cbd221185e3d93f9f
+        id: 1290008374
+        PathAndIcons:
+        - ElementName: level_6
+          ObjectType: 10
+      - name: level_7
+        guid: 3ea53837b048ec428fc58256e7cda7ea
+        id: 1290008375
+        PathAndIcons:
+        - ElementName: level_7
+          ObjectType: 10
+      - name: level_8
+        guid: f0e53b7749f0e147abc84c2c518b4301
+        id: 1290008376
+        PathAndIcons:
+        - ElementName: level_8
+          ObjectType: 10
+      - name: level_9
+        guid: 1d674448d65ab44fbfaa6dd2fbe6f177
+        id: 1290008377
+        PathAndIcons:
+        - ElementName: level_9
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: stages
+      guid: b8bc989b293efe46bb02ad354a7bec74
+      id: 936729656
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stages
+        ObjectType: 11
+      Path: Default Work Unit/stages
+      values:
+      - name: stage_01
+        guid: 355ca5a19a531c4eaefa847d3cebc098
+        id: 344719509
+        PathAndIcons:
+        - ElementName: stage_01
+          ObjectType: 10
+      - name: stage_02
+        guid: f9479031e6743341ba977c718482dec0
+        id: 344719510
+        PathAndIcons:
+        - ElementName: stage_02
+          ObjectType: 10
+      - name: stage_03
+        guid: 81ca88f4782a2a409285bf9594191a51
+        id: 344719511
+        PathAndIcons:
+        - ElementName: stage_03
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPath: 
+    guid: 00000000000000000000000000000000
+    GuidInternal: 
+    m_lastTime: -8586179052864775808
+    List:
+    - name: clear_row_trigger
+      guid: 90059ae0c093e745a80ae3788cb28bb7
+      id: 3249509688
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: clear_row_trigger
+        ObjectType: 14
+      Path: Default Work Unit/clear_row_trigger
+    - name: flip_shape_trigger
+      guid: 342e436230bf814bae26e60d1ac53b21
+      id: 750315547
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: flip_shape_trigger
+        ObjectType: 14
+      Path: Default Work Unit/flip_shape_trigger
+    - name: land_shape_trigger
+      guid: bb5a6a57ce7a8f4f85dd1be5ff2830ad
+      id: 2925865545
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: land_shape_trigger
+        ObjectType: 14
+      Path: Default Work Unit/land_shape_trigger
+    - name: move_shape_left_trigger
+      guid: 3b1c9b7b8bc9be4c8be75e3b0f6f3274
+      id: 1337504389
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: move_shape_left_trigger
+        ObjectType: 14
+      Path: Default Work Unit/move_shape_left_trigger
+    - name: move_shape_right_trigger
+      guid: 3f10854d64c0884a9b2f8f20e9777b1c
+      id: 2830854102
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: move_shape_right_trigger
+        ObjectType: 14
+      Path: Default Work Unit/move_shape_right_trigger
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

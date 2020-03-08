@@ -49,6 +49,7 @@ MonoBehaviour:
       m_PoolSize: 4194304
       m_MaxSoundPropagationDepth: 8
       m_DiffractionFlags: -1
+      m_MovementThreshold: 1
   AdvancedSettings:
     m_IOMemorySize: 2097152
     m_TargetAutoStreamBufferLengthMs: 380
@@ -63,6 +64,7 @@ MonoBehaviour:
     m_SpatialAudioSettings:
       m_DiffractionShadowAttenuationFactor: 2
       m_DiffractionShadowDegrees: 30
+    m_RenderDuringFocusLoss: 0
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024
