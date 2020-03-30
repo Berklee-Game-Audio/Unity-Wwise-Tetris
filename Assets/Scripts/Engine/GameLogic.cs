@@ -228,7 +228,7 @@ namespace TetrisEngine
                 //{
                 SetGameOver(true);
                 music.Play("round_win");
-                currentLevel++;
+                //currentLevel++;
                 
                 return;
             }
@@ -279,10 +279,8 @@ namespace TetrisEngine
             {
                 music.Play("round_win");
                 // if more than one level then levelup
-                if(currentLevel < numberOfLevels)
-                {
-                    //currentLevel++;
-                }
+                
+
             }
             else
             {
@@ -290,6 +288,23 @@ namespace TetrisEngine
             }
 
             GameOver.instance.ShowScreen(isWin, stages.Length, currentLevel == (numberOfLevels - 1), currentLevel);
+
+            if (currentLevel < (numberOfLevels - 1))
+            {
+                currentLevel++;
+                currentStage = 0;
+                Debug.Log("currentLevel++");
+            }
+            else
+            {
+                currentLevel = 0;
+                Debug.Log("currentLevel = 0");
+            }
+
+            //if (isWin && (currentLevel == (numberOfLevels - 1))) {
+            //    Debug.Log("set currentLevel to 0");
+            //   currentLevel = 0;
+            //}
         }
 
         //Call to the engine to create a new piece and create a representation of the random piece in view

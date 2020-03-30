@@ -39,6 +39,7 @@ public abstract class ScoreScreenType<T> : BaseScreen<T> where T : Component
         speed++;
         speedText.text = speedPrefix + speed + "x";
     }
+
     public void SetLines(int value)
     {
         scoreText.text = linesPrefix + value + "/" + stages[stages.Length - 1];
@@ -47,10 +48,14 @@ public abstract class ScoreScreenType<T> : BaseScreen<T> where T : Component
     public void SetLines(int value, bool isWin, int stages, bool isDone)
     {
         Debug.Log("isDone = " + isDone);
-        scoreText.text = isWin ? "You cleared all " + stages + " stages!" : linesPrefix + value;
-        titleText.text = isWin ? "GAME WON" : "GAME OVER";
+        Debug.Log("isWin = " + isWin);
 
-        if (isWin && isDone)
+        scoreText.text = isWin ? "You cleared all " + stages + " stages!" : linesPrefix + value;
+        //scoreText.text = (isWin && isDone) ? "You cleared all " + stages + " stages!" : linesPrefix + value;
+        titleText.text = isDone ? "GAME WON - ALL LEVELS COMPLETED" : "LEVEL COMPLETED";
+        scoreText.text = isDone ? "" : scoreText.text;
+
+        if (isDone)
         {
             playNextLevel.SetActive(false);
             playAgain.SetActive(true);
