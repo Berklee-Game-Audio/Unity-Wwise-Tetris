@@ -14,24 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 9a4a8a4aa0c90843bda8f9eef6658b88
     GuidInternal: 
-    m_lastTime: -8586179052864775808
+    m_lastTime: -8586134133614775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 00d44966a7a16743bf14871356ffdb20
     GuidInternal: 
-    m_lastTime: -8586179052864775808
-    List: []
+    m_lastTime: -8586134133614775808
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit/Master Audio Bus
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 22c8e519e985ef48be392b68059ef0de
     GuidInternal: 
-    m_lastTime: -8586179052864775808
+    m_lastTime: -8586134133614775808
     List:
     - name: Tetris_Soundbank
       guid: 7292c28f8c1f114d8cadc05e1ae40205
@@ -44,10 +53,10 @@ MonoBehaviour:
       Path: Default Work Unit/Tetris_Soundbank
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 548dd4a9c4b9754696ef53634eb8a83e
     GuidInternal: 
-    m_lastTime: -8586179052834775808
+    m_lastTime: -8586134133614775808
     List:
     - name: clear_row
       guid: b188e10a08209b49b683e9ede006be96
@@ -207,10 +216,10 @@ MonoBehaviour:
       minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 01f28c15ab522e47836012d4de76da5e
     GuidInternal: 
-    m_lastTime: -8586179052834775808
+    m_lastTime: -8586134133614775808
     List:
     - name: level_number
       guid: dabc2e6ba050fe4fb63bbc3219f1bbe3
@@ -250,10 +259,10 @@ MonoBehaviour:
       Path: Default Work Unit/stage_number
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 542fefdd170c7342a3940b9807a33939
     GuidInternal: 
-    m_lastTime: -8586179052864775808
+    m_lastTime: -8586134133614775808
     List:
     - name: gameplay_state
       guid: 25001e41fc909747b8f16c4e65d3a879
@@ -288,10 +297,10 @@ MonoBehaviour:
       valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 92207f0951f4734a93c0ca8a22076c2d
     GuidInternal: 
-    m_lastTime: -8586179052834775808
+    m_lastTime: -8586134133614775808
     List:
     - name: level
       guid: 818e9d5281448d4189c54a2d8938fad9
@@ -399,10 +408,10 @@ MonoBehaviour:
       valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
-    ParentPath: 
-    guid: 00000000000000000000000000000000
+    ParentPath: Default Work Unit
+    guid: 4fa79f91eb1d394190f9f725f6ac6e43
     GuidInternal: 
-    m_lastTime: -8586179052864775808
+    m_lastTime: -8586134133614775808
     List:
     - name: clear_row_trigger
       guid: 90059ae0c093e745a80ae3788cb28bb7
@@ -449,6 +458,10 @@ MonoBehaviour:
       - ElementName: move_shape_right_trigger
         ObjectType: 14
       Path: Default Work Unit/move_shape_right_trigger
-  ExpandedItems: []
+  ExpandedItems:
+  - /Wwise Tetris
+  - /Wwise Tetris/SoundBanks
+  - /Wwise Tetris/SoundBanks/Default Work Unit
+  - /Wwise Tetris/States
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
