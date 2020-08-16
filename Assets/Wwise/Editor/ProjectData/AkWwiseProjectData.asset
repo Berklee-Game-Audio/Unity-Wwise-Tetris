@@ -56,7 +56,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 548dd4a9c4b9754696ef53634eb8a83e
     GuidInternal: 
-    m_lastTime: -8586134133614775808
+    m_lastTime: -8586040184804775808
     List:
     - name: clear_row
       guid: b188e10a08209b49b683e9ede006be96
@@ -219,7 +219,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 01f28c15ab522e47836012d4de76da5e
     GuidInternal: 
-    m_lastTime: -8586134133614775808
+    m_lastTime: -8586088367804775808
     List:
     - name: level_number
       guid: dabc2e6ba050fe4fb63bbc3219f1bbe3
@@ -239,6 +239,15 @@ MonoBehaviour:
       - ElementName: max_height
         ObjectType: 13
       Path: Default Work Unit/max_height
+    - name: note
+      guid: 8300c46ecbf22a45ba425bc6b6a87005
+      id: 849560917
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: note
+        ObjectType: 13
+      Path: Default Work Unit/note
     - name: score
       guid: ebb082d89fe30b4bbe2beecffa02216c
       id: 2398231425
@@ -300,7 +309,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 92207f0951f4734a93c0ca8a22076c2d
     GuidInternal: 
-    m_lastTime: -8586134133614775808
+    m_lastTime: -8586040185544775808
     List:
     - name: level
       guid: 818e9d5281448d4189c54a2d8938fad9
@@ -460,8 +469,5 @@ MonoBehaviour:
       Path: Default Work Unit/move_shape_right_trigger
   ExpandedItems:
   - /Wwise Tetris
-  - /Wwise Tetris/SoundBanks
-  - /Wwise Tetris/SoundBanks/Default Work Unit
-  - /Wwise Tetris/States
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

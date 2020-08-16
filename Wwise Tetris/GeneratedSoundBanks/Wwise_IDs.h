@@ -83,6 +83,7 @@ namespace AK
     {
         static const AkUniqueID LEVEL_NUMBER = 4014985419U;
         static const AkUniqueID MAX_HEIGHT = 3817197105U;
+        static const AkUniqueID NOTE = 849560917U;
         static const AkUniqueID SCORE = 2398231425U;
         static const AkUniqueID STAGE_NUMBER = 14811615U;
     } // namespace GAME_PARAMETERS

@@ -27,6 +27,13 @@
 						<Property Name="Max" Type="Real64" Value="20"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="note" ID="{6EC40083-F2CB-452A-BA42-5BC6B6A87005}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+						<Property Name="Min" Type="Real64" Value="-10"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

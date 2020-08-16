@@ -21,8 +21,16 @@
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row"/>
-				<Event Id="2497998238" Name="flip_shape" ObjectPath="\Events\Default Work Unit\flip_shape"/>
+				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="3249509688" Name="clear_row_trigger" ObjectPath="\Triggers\Default Work Unit\clear_row_trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2497998238" Name="flip_shape" ObjectPath="\Events\Default Work Unit\flip_shape">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="750315547" Name="flip_shape_trigger" ObjectPath="\Triggers\Default Work Unit\flip_shape_trigger"/>
+					</ActionTrigger>
+				</Event>
 				<Event Id="2238459845" Name="game_loaded" ObjectPath="\Events\Default Work Unit\game_loaded">
 					<IncludedMemoryFiles>
 						<File Id="254342850" Language="SFX">
@@ -99,6 +107,12 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
+					</ActionSetState>
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2925865545" Name="land_shape_trigger" ObjectPath="\Triggers\Default Work Unit\land_shape_trigger"/>
+					</ActionTrigger>
 				</Event>
 				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start">
 					<IncludedMemoryFiles>
@@ -107,8 +121,15 @@
 							<Path>SFX/game_start_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="3742617664" Name="land_shape" ObjectPath="\Events\Default Work Unit\land_shape"/>
+				<Event Id="3742617664" Name="land_shape" ObjectPath="\Events\Default Work Unit\land_shape">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2925865545" Name="land_shape_trigger" ObjectPath="\Triggers\Default Work Unit\land_shape_trigger"/>
+					</ActionTrigger>
+				</Event>
 				<Event Id="2005704188" Name="main_menu" ObjectPath="\Events\Default Work Unit\main_menu">
 					<IncludedMemoryFiles>
 						<File Id="254342850" Language="SFX">
@@ -185,9 +206,20 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="1146992660" Name="move_shape_left" ObjectPath="\Events\Default Work Unit\move_shape_left"/>
-				<Event Id="898688307" Name="move_shape_right" ObjectPath="\Events\Default Work Unit\move_shape_right"/>
+				<Event Id="1146992660" Name="move_shape_left" ObjectPath="\Events\Default Work Unit\move_shape_left">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="1337504389" Name="move_shape_left_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_left_trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="898688307" Name="move_shape_right" ObjectPath="\Events\Default Work Unit\move_shape_right">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2830854102" Name="move_shape_right_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_right_trigger"/>
+					</ActionTrigger>
+				</Event>
 				<Event Id="528278262" Name="pause_game" ObjectPath="\Events\Default Work Unit\pause_game">
 					<IncludedMemoryFiles>
 						<File Id="183490134" Language="SFX">
@@ -211,6 +243,9 @@
 							<Path>SFX/round_lose_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="361697008" Name="round_win" ObjectPath="\Events\Default Work Unit\round_win">
 					<IncludedMemoryFiles>
@@ -219,6 +254,9 @@
 							<Path>SFX/round_win_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="3435819489" Name="stage_complete" ObjectPath="\Events\Default Work Unit\stage_complete">
 					<IncludedMemoryFiles>
@@ -233,12 +271,18 @@
 				<GameParameter Id="14811615" Name="stage_number" ObjectPath="\Game Parameters\Default Work Unit\stage_number"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="762757699" Name="gameplay_state" ObjectPath="\States\Default Work Unit\gameplay_state">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\gameplay_state\None"/>
 						<State Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
 						<State Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay"/>
 					</States>
+				</StateGroup>
+				<StateGroup Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu">
+					<States/>
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>

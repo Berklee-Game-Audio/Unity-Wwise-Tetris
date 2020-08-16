@@ -71,6 +71,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{B7A29117-B9D3-4014-BBBF-D4903537DAC9}" ShortID="466350080">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="note" ID="{6EC40083-F2CB-452A-BA42-5BC6B6A87005}" WorkUnitID="{158CF201-52AB-472E-8360-12D4DE76DA5E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="round_win" ID="{378D31DD-1140-4CF2-9A8D-5D8381FE5AD4}">
@@ -138,10 +149,9 @@
 				</Event>
 				<Event Name="move_shape_left" ID="{AAD54767-8276-401C-ACF9-A2527718B6D6}">
 					<ChildrenList>
-						<Action Name="" ID="{E519E249-2080-414E-BF18-09D18EB04B10}" ShortID="737396242">
+						<Action Name="" ID="{8642C8E3-258A-48AC-B981-78ABDF96FEE7}" ShortID="1004733077">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="35"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -153,10 +163,9 @@
 				</Event>
 				<Event Name="move_shape_right" ID="{CBAADA2E-25BE-40C5-9E0B-EE9C2F6D3415}">
 					<ChildrenList>
-						<Action Name="" ID="{3D6C9462-7998-4191-80BE-8990BB29412C}" ShortID="244462569">
+						<Action Name="" ID="{D29E3B75-E671-4FD6-8E2B-D75E2364E9A0}" ShortID="442347484">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="35"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

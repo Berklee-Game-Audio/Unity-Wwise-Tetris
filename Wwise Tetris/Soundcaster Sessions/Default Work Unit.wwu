@@ -52,6 +52,10 @@
 							<Value>20</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="note" ID="{6EC40083-F2CB-452A-BA42-5BC6B6A87005}"/>
+							<Value>1.52027027027027</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="score" ID="{D882B0EB-E39F-4B0B-BE2B-EECFFA02216C}"/>
 							<Value>50</Value>
 						</RTPCValue>
