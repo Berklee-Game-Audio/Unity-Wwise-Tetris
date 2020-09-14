@@ -47,6 +47,9 @@ namespace TetrisEngine
         private Pooling<TetriminoBlock> mBlockPool = new Pooling<TetriminoBlock>();
         private Pooling<TetriminoView> mTetriminoPool = new Pooling<TetriminoView>();
 
+        private int currentMaximumHeight = 20;
+
+
         private Tetrimino mCurrentTetrimino
         {
             get
@@ -63,6 +66,7 @@ namespace TetrisEngine
         {
             music = ScriptableObject.CreateInstance("Wwise") as Wwise;
             music.RTPC("level_number", (currentLevel + 1));
+            currentMaximumHeight = 20;
             GameOver.instance.HideScreen(0f);
             StageUp.instance.HideScreen(0f);
             StartGame.instance.ShowScreen(0f);
@@ -314,9 +318,15 @@ namespace TetrisEngine
             {
                 music.Play("land_shape");
 
-                //then send max_height over to Wwise
-                Debug.Log("max_height: " + mCurrentTetrimino.currentPosition.y);
-                music.RTPC("max_height", mCurrentTetrimino.currentPosition.y);
+                if(mCurrentTetrimino.currentPosition.y < currentMaximumHeight)
+                {
+                    //then send max_height over to Wwise
+                    Debug.Log("max_height: " + mCurrentTetrimino.currentPosition.y);
+                    music.RTPC("max_height", mCurrentTetrimino.currentPosition.y);
+                    currentMaximumHeight = mCurrentTetrimino.currentPosition.y;
+                }
+
+                
 
                 mCurrentTetrimino.isLocked = true;
 
