@@ -103,11 +103,11 @@ namespace TetrisEngine
             CreateTetrimino();
             mGameIsOver = false;
 
-            IncreaseSpeed();
-            IncreaseSpeed();
-            IncreaseSpeed();
-            IncreaseSpeed();
-            IncreaseSpeed();
+            //IncreaseSpeed();
+            //IncreaseSpeed();
+            //IncreaseSpeed();
+            //IncreaseSpeed();
+            //IncreaseSpeed();
             IncreaseSpeed();
             IncreaseSpeed();
             IncreaseSpeed();
@@ -289,11 +289,13 @@ namespace TetrisEngine
             else
             {
                 music.Play("round_lose");
+                timeToStep = 1f;
+                Score.instance.SetSpeed();
             }
 
             GameOver.instance.ShowScreen(isWin, stages.Length, currentLevel == (numberOfLevels - 1), currentLevel);
 
-            if (currentLevel < (numberOfLevels - 1))
+            if (currentLevel < (numberOfLevels - 1) && isWin)
             {
                 currentLevel++;
                 currentStage = 0;

@@ -50,21 +50,35 @@ public abstract class ScoreScreenType<T> : BaseScreen<T> where T : Component
         Debug.Log("isDone = " + isDone);
         Debug.Log("isWin = " + isWin);
 
-        scoreText.text = isWin ? "You cleared all " + stages + " stages!" : linesPrefix + value;
-        //scoreText.text = (isWin && isDone) ? "You cleared all " + stages + " stages!" : linesPrefix + value;
-        titleText.text = isDone ? "GAME WON - ALL LEVELS COMPLETED" : "LEVEL COMPLETED";
-        scoreText.text = isDone ? "" : scoreText.text;
-
-        if (isDone)
+        if(isDone && isWin)
         {
+            titleText.text = "GAME WON - ALL LEVELS COMPLETED" ;
             playNextLevel.SetActive(false);
             playAgain.SetActive(true);
-        } else
-        {
-            playNextLevel.SetActive(true);
-            playAgain.SetActive(false);
         }
 
+        if (isDone && !isWin)
+        {
+            titleText.text = "LEVEL LOST";
+            playNextLevel.SetActive(false);
+            playAgain.SetActive(true);
+        }
+
+
+        if (!isDone && !isWin)
+        {
+            titleText.text = "LEVEL LOST";
+            playNextLevel.SetActive(false);
+            playAgain.SetActive(true);
+        }
+
+
+        //: "LEVEL COMPLETED"
+
+        scoreText.text = isWin ? "You cleared all " + stages + " stages!" : linesPrefix + value;
+        //scoreText.text = (isWin && isDone) ? "You cleared all " + stages + " stages!" : linesPrefix + value;
+        
+        scoreText.text = isDone ? "" : scoreText.text;
 
         Debug.Log("WIN LOSE STUFF");
     }
