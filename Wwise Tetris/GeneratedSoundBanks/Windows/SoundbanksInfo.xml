@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2478475628">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX">
+		<SoundBank Id="3052682920" Language="SFX" Hash="3547405204">
 			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
@@ -74,39 +74,6 @@
 							<Path>SFX/clear_row_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}">
-							<Media>
-								<File Id="1036727112"/>
-								<File Id="432806552"/>
-								<File Id="365611745"/>
-								<File Id="286926855"/>
-								<File Id="555003965"/>
-							</Media>
-							<Children>
-								<SwitchContainer SwitchValue="{A1A55C35-539A-4E1C-AEFA-847D3CEBC098}">
-									<Media>
-										<File Id="797705488"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{319047F9-74E6-4133-BA97-7C718482DEC0}">
-									<Media>
-										<File Id="254342850"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{F488CA81-2A78-402A-9285-BF9594191A51}">
-									<Media>
-										<File Id="818851471"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6057D18C-EAED-4069-8421-08D348B16F18}">
-							<Media>
-								<File Id="656307854"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
 					</ActionSetState>
@@ -173,39 +140,6 @@
 							<Path>SFX/clear_row_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}">
-							<Media>
-								<File Id="1036727112"/>
-								<File Id="432806552"/>
-								<File Id="365611745"/>
-								<File Id="286926855"/>
-								<File Id="555003965"/>
-							</Media>
-							<Children>
-								<SwitchContainer SwitchValue="{A1A55C35-539A-4E1C-AEFA-847D3CEBC098}">
-									<Media>
-										<File Id="797705488"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{319047F9-74E6-4133-BA97-7C718482DEC0}">
-									<Media>
-										<File Id="254342850"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{F488CA81-2A78-402A-9285-BF9594191A51}">
-									<Media>
-										<File Id="818851471"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6057D18C-EAED-4069-8421-08D348B16F18}">
-							<Media>
-								<File Id="656307854"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
 					</ActionSetState>
