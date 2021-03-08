@@ -4,13 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Game Switch Container" ID="{C8EDAE79-0F91-4FA3-BB3E-94F70C8DC535}" ShortID="116712530">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B98C6796-7516-45E5-AA26-88CC77AB0511}"/>
