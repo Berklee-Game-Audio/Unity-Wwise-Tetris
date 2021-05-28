@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{158CF201-52AB-472E-8360-12D4DE76DA5E}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{158CF201-52AB-472E-8360-12D4DE76DA5E}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="score" ID="{D882B0EB-E39F-4B0B-BE2B-EECFFA02216C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="100000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="level_number" ID="{6B2EBCDA-50A0-4FFE-B63B-BC3219F1BBE3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="max_height" ID="{7F376673-56E8-4E0D-A1DD-2267D7492411}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="25"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="stage_number" ID="{18A9593B-BCAC-40BA-A539-53A3B42DA320}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="note" ID="{6EC40083-F2CB-452A-BA42-5BC6B6A87005}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+						<Property Name="Min" Type="Real64" Value="-10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
