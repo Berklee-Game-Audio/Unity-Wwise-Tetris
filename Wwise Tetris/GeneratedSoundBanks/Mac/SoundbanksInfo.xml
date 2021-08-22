@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX" Hash="1751364300">
+		<SoundBank Id="3052682920" Language="SFX" Hash="961665570">
 			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
@@ -65,9 +65,9 @@
 							<ShortName>nw_loop_3.wav</ShortName>
 							<Path>SFX/nw_loop_3_78160227.wem</Path>
 						</File>
-						<File Id="910665663" Language="SFX">
-							<ShortName>main_menu_music.wav</ShortName>
-							<Path>SFX/main_menu_music_9EDFC787.wem</Path>
+						<File Id="973273452" Language="SFX">
+							<ShortName>Big-D.wav</ShortName>
+							<Path>SFX/Big-D_9EDFC787.wem</Path>
 						</File>
 						<File Id="1036727112" Language="SFX">
 							<ShortName>clear_row.wav</ShortName>
@@ -131,9 +131,9 @@
 							<ShortName>nw_loop_3.wav</ShortName>
 							<Path>SFX/nw_loop_3_78160227.wem</Path>
 						</File>
-						<File Id="910665663" Language="SFX">
-							<ShortName>main_menu_music.wav</ShortName>
-							<Path>SFX/main_menu_music_9EDFC787.wem</Path>
+						<File Id="973273452" Language="SFX">
+							<ShortName>Big-D.wav</ShortName>
+							<Path>SFX/Big-D_9EDFC787.wem</Path>
 						</File>
 						<File Id="1036727112" Language="SFX">
 							<ShortName>clear_row.wav</ShortName>

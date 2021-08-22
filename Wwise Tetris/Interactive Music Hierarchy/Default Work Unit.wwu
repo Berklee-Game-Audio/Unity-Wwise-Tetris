@@ -25,7 +25,7 @@
 							<ChildrenList>
 								<MusicSegment Name="menu_segment" ID="{7E5A7128-4E12-47E6-AEE7-3169CC8A8832}" ShortID="416625109">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="55961.3039055662"/>
+										<Property Name="EndPosition" Type="Real64" Value="9723.56282437564"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
@@ -41,14 +41,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="looping-dark-ambience" ID="{D3074F4E-16AE-4009-B0E6-30A5064B1ABD}" ShortID="912569228">
+										<MusicTrack Name="Big-D" ID="{1540CF7C-867A-43DF-B83A-7F3564AC50B7}" ShortID="783762727">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6649D400-A1A7-4367-BF14-871356FFDB20}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="main_menu_music" ID="{A486BBF8-B833-4CA7-ADC2-C880E42D7928}">
+												<AudioFileSource Name="Big-D" ID="{0B841CF6-9137-4123-9CF0-577E78381D52}">
 													<PropertyList>
 														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
 														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
@@ -56,14 +56,14 @@
 														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>main_menu_music.wav</AudioFile>
+													<AudioFile>Big-D.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="910665663"/>
+														<MediaID ID="973273452"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{AFA83105-44E4-4F76-BD9D-FBD309FD11CF}">
+												<MusicTransition Name="Root" ID="{0E030567-EE57-4AC1-8405-12B0E637B486}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -74,18 +74,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{C096EB0F-8AB9-48C4-96E8-52BC9BD845C0}">
+															<MusicTrackSequence Name="" ID="{4F232E73-7AA7-443C-BCD9-3808D2D5662E}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="main_menu_music" ID="{8A6B3B46-DDB8-4396-8E3D-1B2900E7DCDD}">
+																				<MusicClip Name="Big-D" ID="{8BD3C921-BC6C-41CC-8128-93857EC4D373}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="26720"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="4845.83333333333"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="911.30531441935"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="734.10705883781"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="main_menu_music" ID="{A486BBF8-B833-4CA7-ADC2-C880E42D7928}"/>
+																					<AudioSourceRef Name="Big-D" ID="{0B841CF6-9137-4123-9CF0-577E78381D52}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -102,7 +102,11 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{34D5FC38-A924-4DEF-AE35-8D66203B63A5}"/>
+													<MusicCue Name="Entry Cue" ID="{34D5FC38-A924-4DEF-AE35-8D66203B63A5}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="556.124033622567"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 											<Reference>
@@ -110,7 +114,7 @@
 													<MusicCue Name="Exit Cue" ID="{32187546-22BC-4794-9F45-7578E2569718}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="24000"/>
+															<Property Name="TimeMs" Type="Real64" Value="3979.53478958759"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>

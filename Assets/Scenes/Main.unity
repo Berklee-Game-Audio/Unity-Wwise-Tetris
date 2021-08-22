@@ -2486,7 +2486,7 @@ MonoBehaviour:
     type: 3}
   tetriminoParent: {fileID: 897948402}
   numberOfLevels: 2
-  stages: 030000000600000009000000
+  stages: 0a000000140000001e000000
   enableStartScreen: 1
 --- !u!4 &1997274774
 Transform:
