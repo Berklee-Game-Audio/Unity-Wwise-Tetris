@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX" Hash="2885881710">
+		<SoundBank Id="3052682920" Language="SFX" Hash="1751364300">
 			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
@@ -154,22 +154,6 @@
 						<ActionTriggerEntry Id="2830854102" Name="move_shape_right_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_right_trigger"/>
 					</ActionTrigger>
 				</Event>
-				<Event Id="528278262" Name="pause_game" ObjectPath="\Events\Default Work Unit\pause_game">
-					<IncludedMemoryFiles>
-						<File Id="183490134" Language="SFX">
-							<ShortName>pause_game.wav</ShortName>
-							<Path>SFX/pause_game_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1119896719" Name="pause_release" ObjectPath="\Events\Default Work Unit\pause_release">
-					<IncludedMemoryFiles>
-						<File Id="169837349" Language="SFX">
-							<ShortName>pause_release.wav</ShortName>
-							<Path>SFX/pause_release_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="3411202357" Name="round_lose" ObjectPath="\Events\Default Work Unit\round_lose">
 					<IncludedMemoryFiles>
 						<File Id="106603757" Language="SFX">
@@ -205,26 +189,26 @@
 				<GameParameter Id="14811615" Name="stage_number" ObjectPath="\Game Parameters\Default Work Unit\stage_number"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay">
+				<StateGroup Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay" GUID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}">
 					<States/>
 				</StateGroup>
-				<StateGroup Id="762757699" Name="gameplay_state" ObjectPath="\States\Default Work Unit\gameplay_state">
+				<StateGroup Id="762757699" Name="gameplay_state" ObjectPath="\States\Default Work Unit\gameplay_state" GUID="{411E0025-90FC-4797-B8F1-6C4E65D3A879}">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\gameplay_state\None"/>
-						<State Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
-						<State Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\gameplay_state\None" GUID="{D7A9AA45-9D57-4B45-9913-8B181FCEC150}"/>
+						<State Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu" GUID="{6057D18C-EAED-4069-8421-08D348B16F18}"/>
+						<State Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay" GUID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu">
+				<StateGroup Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu" GUID="{6057D18C-EAED-4069-8421-08D348B16F18}">
 					<States/>
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
-				<SwitchGroup Id="936729656" Name="stages" ObjectPath="\Switches\Default Work Unit\stages">
+				<SwitchGroup Id="936729656" Name="stages" ObjectPath="\Switches\Default Work Unit\stages" GUID="{9B98BCB8-3E29-46FE-BB02-AD354A7BEC74}">
 					<Switches>
-						<Switch Id="344719509" Name="stage_01" ObjectPath="\Switches\Default Work Unit\stages\stage_01"/>
-						<Switch Id="344719510" Name="stage_02" ObjectPath="\Switches\Default Work Unit\stages\stage_02"/>
-						<Switch Id="344719511" Name="stage_03" ObjectPath="\Switches\Default Work Unit\stages\stage_03"/>
+						<Switch Id="344719509" Name="stage_01" ObjectPath="\Switches\Default Work Unit\stages\stage_01" GUID="{A1A55C35-539A-4E1C-AEFA-847D3CEBC098}"/>
+						<Switch Id="344719510" Name="stage_02" ObjectPath="\Switches\Default Work Unit\stages\stage_02" GUID="{319047F9-74E6-4133-BA97-7C718482DEC0}"/>
+						<Switch Id="344719511" Name="stage_03" ObjectPath="\Switches\Default Work Unit\stages\stage_03" GUID="{F488CA81-2A78-402A-9285-BF9594191A51}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

@@ -21,8 +21,6 @@ namespace AK
         static const AkUniqueID MAIN_MENU = 2005704188U;
         static const AkUniqueID MOVE_SHAPE_LEFT = 1146992660U;
         static const AkUniqueID MOVE_SHAPE_RIGHT = 898688307U;
-        static const AkUniqueID PAUSE_GAME = 528278262U;
-        static const AkUniqueID PAUSE_RELEASE = 1119896719U;
         static const AkUniqueID ROUND_LOSE = 3411202357U;
         static const AkUniqueID ROUND_WIN = 361697008U;
         static const AkUniqueID STAGE_COMPLETE = 3435819489U;

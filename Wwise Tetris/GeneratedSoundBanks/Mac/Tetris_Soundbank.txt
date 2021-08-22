@@ -1,9 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	361697008	round_win			\Default Work Unit\round_win	
-	528278262	pause_game			\Default Work Unit\pause_game	
 	733168346	game_start			\Default Work Unit\game_start	
 	898688307	move_shape_right			\Default Work Unit\move_shape_right	
-	1119896719	pause_release			\Default Work Unit\pause_release	
 	1146992660	move_shape_left			\Default Work Unit\move_shape_left	
 	1870373793	clear_row			\Default Work Unit\clear_row	
 	2005704188	main_menu			\Default Work Unit\main_menu	
@@ -42,8 +40,6 @@ Trigger	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	106603757	round_lose	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\round_lose_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\round_lose_segment\round_lose		13127
 	168330736	round_win	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\round_win_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\round_win_segment\round_win		11199
-	169837349	pause_release	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\pause_release_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\pause_release_segment\pause_release		9772
-	183490134	pause_game	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\pause_game_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\pause_game_segment\pause_game		10834
 	254342850	nw_loop_2	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\nw_loop_2_78160227.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch\gameplay_stage_2_playlist\gameplay_stage_2_segment\nw_loop_2		50779
 	286926855	move_shape_left	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\move_shape_left_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch\move_shape_left_segment\move_shape_left		10546
 	365611745	land_shape	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Mac\SFX\land_shape_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch\land_shape_segment\land_shape		9666

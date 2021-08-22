@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 22c8e519e985ef48be392b68059ef0de
     GuidInternal: 
-    m_lastTime: -8585797441584775808
+    m_lastTime: -8585719529404775808
     List:
     - name: Tetris_Soundbank
       guid: 7292c28f8c1f114d8cadc05e1ae40205
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 548dd4a9c4b9754696ef53634eb8a83e
     GuidInternal: 
-    m_lastTime: -8585797441584775808
+    m_lastTime: -8585719529674775808
     List:
     - name: clear_row
       guid: b188e10a08209b49b683e9ede006be96
@@ -229,40 +229,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2edaaacbbe25c5409e0bee9c2f6d3415
       Path: Events/Default Work Unit/move_shape_right
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: pause_game
-      guid: b97f300b1068204b99579155243bb3c1
-      id: 528278262
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 548dd4a9c4b9754696ef53634eb8a83e
-      - ElementName: pause_game
-        ObjectType: 3
-        guid: b97f300b1068204b99579155243bb3c1
-      Path: Events/Default Work Unit/pause_game
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: pause_release
-      guid: c950ecb4339c164daf85bc75f5bc37ee
-      id: 1119896719
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 548dd4a9c4b9754696ef53634eb8a83e
-      - ElementName: pause_release
-        ObjectType: 3
-        guid: c950ecb4339c164daf85bc75f5bc37ee
-      Path: Events/Default Work Unit/pause_release
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

@@ -232,34 +232,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="pause_game" ID="{0B307FB9-6810-4B20-9957-9155243BB3C1}">
-					<ChildrenList>
-						<Action Name="" ID="{C8C68B68-C91F-4435-AF0B-17C81371C69C}" ShortID="338426578">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="pause_game_segment" ID="{8EE84CBF-9E36-4C13-826B-196BA82AF660}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="pause_release" ID="{B4EC50C9-9C33-4D16-AF85-BC75F5BC37EE}">
-					<ChildrenList>
-						<Action Name="" ID="{961F352B-E83E-42A4-8B75-8CE1E24F8146}" ShortID="702385782">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="pause_release_segment" ID="{9C100978-342F-4EBF-80E8-753BEB54B02B}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="game_loaded" ID="{47D9A03F-8B98-4526-A222-148ACFA65E9F}">
 					<ChildrenList>
 						<Action Name="" ID="{6CF3ADFE-CB9C-40BD-8B3A-374B220DB614}" ShortID="306510302">
