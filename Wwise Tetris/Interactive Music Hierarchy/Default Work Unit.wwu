@@ -154,6 +154,13 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicSwitchContainer Name="gameplay_music_switch" ID="{75340F96-ABE3-4412-9798-CB79D0E09439}" ShortID="224386346">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B98C6796-7516-45E5-AA26-88CC77AB0511}"/>
