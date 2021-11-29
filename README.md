@@ -1,7 +1,5 @@
 # Unity-Wwise-Game-Template-Tetris
 
-Unity template which allows composers to test Wwise Projects
-
 Optimized for Unity Version: 
 2020.3.13f1
 
