@@ -61,7 +61,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="max_height" ID="{7F376673-56E8-4E0D-A1DD-2267D7492411}"/>
-							<Value>25</Value>
+							<Value>5.4</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="level_number" ID="{6B2EBCDA-50A0-4FFE-B63B-BC3219F1BBE3}"/>
@@ -72,6 +72,7 @@
 						<CurrentStateRef Name="gameplay" ID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="level_3" ID="{FEE3D274-BAB7-4D7E-BF1C-C3FD73E6A435}"/>
 						<CurrentSwitchRef Name="stage_03" ID="{F488CA81-2A78-402A-9285-BF9594191A51}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

@@ -82,6 +82,18 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{8A26FA8A-EBC4-4358-9BEA-BE05ED73F010}" ShortID="1060641170">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="20"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="max_height" ID="{7F376673-56E8-4E0D-A1DD-2267D7492411}" WorkUnitID="{158CF201-52AB-472E-8360-12D4DE76DA5E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="round_win" ID="{378D31DD-1140-4CF2-9A8D-5D8381FE5AD4}">
@@ -261,17 +273,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="main_menu_segment" ID="{5191E19D-F373-4212-A533-5A706B238A67}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4287278C-42D4-4D66-8D36-50AF8A14C038}" ShortID="563753558">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="35"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="land_shape_trigger" ID="{576A5ABB-7ACE-4F8F-85DD-1BE5FF2830AD}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
