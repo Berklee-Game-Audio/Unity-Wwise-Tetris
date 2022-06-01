@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Virtual Acoustics
       ObjectType: 5
@@ -21,13 +21,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 9a4a8a4aa0c90843bda8f9eef6658b88
-    ParentPath: Virtual Acoustics\Default Work Unit
+    ParentPath: Virtual Acoustics/Default Work Unit
     guid: 9a4a8a4aa0c90843bda8f9eef6658b88
     GuidInternal: 
-    m_lastTime: -8585532061635020221
+    m_lastTime: -8585797441584775808
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Master-Mixer Hierarchy
       ObjectType: 5
@@ -35,10 +35,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 00d44966a7a16743bf14871356ffdb20
-    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 00d44966a7a16743bf14871356ffdb20
     GuidInternal: 
-    m_lastTime: -8585532061636077405
+    m_lastTime: -8585797441584775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -53,9 +53,9 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
@@ -63,10 +63,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 22c8e519e985ef48be392b68059ef0de
-    ParentPath: SoundBanks\Default Work Unit
+    ParentPath: SoundBanks/Default Work Unit
     guid: 22c8e519e985ef48be392b68059ef0de
     GuidInternal: 
-    m_lastTime: -8585532061635040002
+    m_lastTime: -8585719529404775808
     List:
     - name: Tetris_Soundbank
       guid: 7292c28f8c1f114d8cadc05e1ae40205
@@ -81,9 +81,9 @@ MonoBehaviour:
       - ElementName: Tetris_Soundbank
         ObjectType: 7
         guid: 7292c28f8c1f114d8cadc05e1ae40205
-      Path: SoundBanks\Default Work Unit\Tetris_Soundbank
+      Path: SoundBanks/Default Work Unit/Tetris_Soundbank
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
@@ -91,10 +91,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 548dd4a9c4b9754696ef53634eb8a83e
-    ParentPath: Events\Default Work Unit
+    ParentPath: Events/Default Work Unit
     guid: 548dd4a9c4b9754696ef53634eb8a83e
     GuidInternal: 
-    m_lastTime: -8585532047442706647
+    m_lastTime: -8585475175304775808
     List:
     - name: clear_row
       guid: b188e10a08209b49b683e9ede006be96
@@ -109,7 +109,7 @@ MonoBehaviour:
       - ElementName: clear_row
         ObjectType: 3
         guid: b188e10a08209b49b683e9ede006be96
-      Path: Events\Default Work Unit\clear_row
+      Path: Events/Default Work Unit/clear_row
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
       - ElementName: flip_shape
         ObjectType: 3
         guid: 7b989e80dc66d8458edc310b2bcccca1
-      Path: Events\Default Work Unit\flip_shape
+      Path: Events/Default Work Unit/flip_shape
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
       - ElementName: game_loaded
         ObjectType: 3
         guid: 3fa0d947988b2645a222148acfa65e9f
-      Path: Events\Default Work Unit\game_loaded
+      Path: Events/Default Work Unit/game_loaded
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -160,7 +160,7 @@ MonoBehaviour:
       - ElementName: game_start
         ObjectType: 3
         guid: c65e4cc159f8b24eb602d3b0373c2cf3
-      Path: Events\Default Work Unit\game_start
+      Path: Events/Default Work Unit/game_start
       maxAttenuation: 0
       maxDuration: 1.073187
       minDuration: 1.073187
@@ -177,7 +177,7 @@ MonoBehaviour:
       - ElementName: land_shape
         ObjectType: 3
         guid: 43e0230b46f6ca4c8a644825896417d8
-      Path: Events\Default Work Unit\land_shape
+      Path: Events/Default Work Unit/land_shape
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
       - ElementName: main_menu
         ObjectType: 3
         guid: 8ef0e123fa46d34e9449b0e525f00d66
-      Path: Events\Default Work Unit\main_menu
+      Path: Events/Default Work Unit/main_menu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -211,7 +211,7 @@ MonoBehaviour:
       - ElementName: move_shape_left
         ObjectType: 3
         guid: 6747d5aa76821c40acf9a2527718b6d6
-      Path: Events\Default Work Unit\move_shape_left
+      Path: Events/Default Work Unit/move_shape_left
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -228,7 +228,7 @@ MonoBehaviour:
       - ElementName: move_shape_right
         ObjectType: 3
         guid: 2edaaacbbe25c5409e0bee9c2f6d3415
-      Path: Events\Default Work Unit\move_shape_right
+      Path: Events/Default Work Unit/move_shape_right
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
       - ElementName: round_lose
         ObjectType: 3
         guid: c3631d882983bb4196bd68061d9687e2
-      Path: Events\Default Work Unit\round_lose
+      Path: Events/Default Work Unit/round_lose
       maxAttenuation: 0
       maxDuration: 1.444312
       minDuration: 1.444312
@@ -262,7 +262,7 @@ MonoBehaviour:
       - ElementName: round_win
         ObjectType: 3
         guid: dd318d374011f24c9a8d5d8381fe5ad4
-      Path: Events\Default Work Unit\round_win
+      Path: Events/Default Work Unit/round_win
       maxAttenuation: 0
       maxDuration: 1.3715
       minDuration: 1.3715
@@ -279,12 +279,12 @@ MonoBehaviour:
       - ElementName: stage_complete
         ObjectType: 3
         guid: 085fd72fb3ed7c4994f8e185cd752b02
-      Path: Events\Default Work Unit\stage_complete
+      Path: Events/Default Work Unit/stage_complete
       maxAttenuation: 0
       maxDuration: 1.152667
       minDuration: 1.152667
   RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
       ObjectType: 5
@@ -292,10 +292,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 01f28c15ab522e47836012d4de76da5e
-    ParentPath: Game Parameters\Default Work Unit
+    ParentPath: Game Parameters/Default Work Unit
     guid: 01f28c15ab522e47836012d4de76da5e
     GuidInternal: 
-    m_lastTime: -8585532042793525001
+    m_lastTime: -8585475175304775808
     List:
     - name: level_number
       guid: dabc2e6ba050fe4fb63bbc3219f1bbe3
@@ -310,7 +310,7 @@ MonoBehaviour:
       - ElementName: level_number
         ObjectType: 13
         guid: dabc2e6ba050fe4fb63bbc3219f1bbe3
-      Path: Game Parameters\Default Work Unit\level_number
+      Path: Game Parameters/Default Work Unit/level_number
     - name: max_height
       guid: 7366377fe8560d4ea1dd2267d7492411
       id: 3817197105
@@ -324,7 +324,7 @@ MonoBehaviour:
       - ElementName: max_height
         ObjectType: 13
         guid: 7366377fe8560d4ea1dd2267d7492411
-      Path: Game Parameters\Default Work Unit\max_height
+      Path: Game Parameters/Default Work Unit/max_height
     - name: note
       guid: 8300c46ecbf22a45ba425bc6b6a87005
       id: 849560917
@@ -338,7 +338,7 @@ MonoBehaviour:
       - ElementName: note
         ObjectType: 13
         guid: 8300c46ecbf22a45ba425bc6b6a87005
-      Path: Game Parameters\Default Work Unit\note
+      Path: Game Parameters/Default Work Unit/note
     - name: score
       guid: ebb082d89fe30b4bbe2beecffa02216c
       id: 2398231425
@@ -352,7 +352,7 @@ MonoBehaviour:
       - ElementName: score
         ObjectType: 13
         guid: ebb082d89fe30b4bbe2beecffa02216c
-      Path: Game Parameters\Default Work Unit\score
+      Path: Game Parameters/Default Work Unit/score
     - name: stage_number
       guid: 3b59a918acbcba40a53953a3b42da320
       id: 14811615
@@ -366,9 +366,9 @@ MonoBehaviour:
       - ElementName: stage_number
         ObjectType: 13
         guid: 3b59a918acbcba40a53953a3b42da320
-      Path: Game Parameters\Default Work Unit\stage_number
+      Path: Game Parameters/Default Work Unit/stage_number
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: States
       ObjectType: 5
@@ -376,10 +376,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 542fefdd170c7342a3940b9807a33939
-    ParentPath: States\Default Work Unit
+    ParentPath: States/Default Work Unit
     guid: 542fefdd170c7342a3940b9807a33939
     GuidInternal: 
-    m_lastTime: -8585532061635030323
+    m_lastTime: -8585532996474775808
     List:
     - name: gameplay_state
       guid: 25001e41fc909747b8f16c4e65d3a879
@@ -394,7 +394,7 @@ MonoBehaviour:
       - ElementName: gameplay_state
         ObjectType: 9
         guid: 25001e41fc909747b8f16c4e65d3a879
-      Path: States\Default Work Unit\gameplay_state
+      Path: States/Default Work Unit/gameplay_state
       values:
       - name: gameplay
         guid: 69abbcc92b89fd4bbf15f5a3cffafa80
@@ -448,7 +448,7 @@ MonoBehaviour:
       ValueIcons: []
       valuesInternal: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Switches
       ObjectType: 5
@@ -456,10 +456,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 92207f0951f4734a93c0ca8a22076c2d
-    ParentPath: Switches\Default Work Unit
+    ParentPath: Switches/Default Work Unit
     guid: 92207f0951f4734a93c0ca8a22076c2d
     GuidInternal: 
-    m_lastTime: -8585532061635030323
+    m_lastTime: -8585797441584775808
     List:
     - name: level
       guid: 818e9d5281448d4189c54a2d8938fad9
@@ -474,7 +474,7 @@ MonoBehaviour:
       - ElementName: level
         ObjectType: 11
         guid: 818e9d5281448d4189c54a2d8938fad9
-      Path: Switches\Default Work Unit\level
+      Path: Switches/Default Work Unit/level
       values:
       - name: level_1
         guid: 92f523fbaae7a549b9f26a19397e0d4d
@@ -652,7 +652,7 @@ MonoBehaviour:
       - ElementName: stages
         ObjectType: 11
         guid: b8bc989b293efe46bb02ad354a7bec74
-      Path: Switches\Default Work Unit\stages
+      Path: Switches/Default Work Unit/stages
       values:
       - name: stage_01
         guid: 355ca5a19a531c4eaefa847d3cebc098
@@ -706,7 +706,7 @@ MonoBehaviour:
       ValueIcons: []
       valuesInternal: []
   TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
+  - PhysicalPath: Triggers/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Triggers
       ObjectType: 5
@@ -714,10 +714,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 4fa79f91eb1d394190f9f725f6ac6e43
-    ParentPath: Triggers\Default Work Unit
+    ParentPath: Triggers/Default Work Unit
     guid: 4fa79f91eb1d394190f9f725f6ac6e43
     GuidInternal: 
-    m_lastTime: -8585532061635020221
+    m_lastTime: -8585797441584775808
     List:
     - name: clear_row_trigger
       guid: 90059ae0c093e745a80ae3788cb28bb7
@@ -732,7 +732,7 @@ MonoBehaviour:
       - ElementName: clear_row_trigger
         ObjectType: 14
         guid: 90059ae0c093e745a80ae3788cb28bb7
-      Path: Triggers\Default Work Unit\clear_row_trigger
+      Path: Triggers/Default Work Unit/clear_row_trigger
     - name: flip_shape_trigger
       guid: 342e436230bf814bae26e60d1ac53b21
       id: 750315547
@@ -746,7 +746,7 @@ MonoBehaviour:
       - ElementName: flip_shape_trigger
         ObjectType: 14
         guid: 342e436230bf814bae26e60d1ac53b21
-      Path: Triggers\Default Work Unit\flip_shape_trigger
+      Path: Triggers/Default Work Unit/flip_shape_trigger
     - name: land_shape_trigger
       guid: bb5a6a57ce7a8f4f85dd1be5ff2830ad
       id: 2925865545
@@ -760,7 +760,7 @@ MonoBehaviour:
       - ElementName: land_shape_trigger
         ObjectType: 14
         guid: bb5a6a57ce7a8f4f85dd1be5ff2830ad
-      Path: Triggers\Default Work Unit\land_shape_trigger
+      Path: Triggers/Default Work Unit/land_shape_trigger
     - name: move_shape_left_trigger
       guid: 3b1c9b7b8bc9be4c8be75e3b0f6f3274
       id: 1337504389
@@ -774,7 +774,7 @@ MonoBehaviour:
       - ElementName: move_shape_left_trigger
         ObjectType: 14
         guid: 3b1c9b7b8bc9be4c8be75e3b0f6f3274
-      Path: Triggers\Default Work Unit\move_shape_left_trigger
+      Path: Triggers/Default Work Unit/move_shape_left_trigger
     - name: move_shape_right_trigger
       guid: 3f10854d64c0884a9b2f8f20e9777b1c
       id: 2830854102
@@ -788,10 +788,10 @@ MonoBehaviour:
       - ElementName: move_shape_right_trigger
         ObjectType: 14
         guid: 3f10854d64c0884a9b2f8f20e9777b1c
-      Path: Triggers\Default Work Unit\move_shape_right_trigger
-  ExpandedFileSystemItemIds: 020000000300000029000000
-  ExpandedWaapiItemIds: 020000000300000029000000
+      Path: Triggers/Default Work Unit/move_shape_right_trigger
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

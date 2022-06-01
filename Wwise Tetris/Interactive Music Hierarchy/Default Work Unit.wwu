@@ -42,6 +42,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="Big-D" ID="{1540CF7C-867A-43DF-B83A-7F3564AC50B7}" ShortID="783762727">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6649D400-A1A7-4367-BF14-871356FFDB20}"/>

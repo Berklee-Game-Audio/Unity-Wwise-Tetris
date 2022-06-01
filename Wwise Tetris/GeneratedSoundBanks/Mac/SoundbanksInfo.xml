@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\micha\Desktop\GIT\Unity-Wwise-Tetris\Wwise Tetris\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\micha\Desktop\GIT\Unity-Wwise-Tetris\Wwise Tetris\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\micha\Desktop\GIT\Unity-Wwise-Tetris\Wwise Tetris\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/</ProjectRoot>
+		<SourceFilesRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\micha\Desktop\GIT\Unity-Wwise-Tetris\Wwise Tetris\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,168 +16,168 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX" Hash="3571325947">
+		<SoundBank Id="3052682920" Language="SFX" Hash="3776899633">
 			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="3249509688" Name="clear_row_trigger" ObjectPath="\Triggers\Default Work Unit\clear_row_trigger"/>
 					</ActionTrigger>
 				</Event>
-				<Event Id="2497998238" Name="flip_shape" ObjectPath="\Events\Default Work Unit\flip_shape" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2497998238" Name="flip_shape" ObjectPath="\Events\Default Work Unit\flip_shape">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="750315547" Name="flip_shape_trigger" ObjectPath="\Triggers\Default Work Unit\flip_shape_trigger"/>
 					</ActionTrigger>
 				</Event>
-				<Event Id="2238459845" Name="game_loaded" ObjectPath="\Events\Default Work Unit\game_loaded" DurationType="Infinite">
+				<Event Id="2238459845" Name="game_loaded" ObjectPath="\Events\Default Work Unit\game_loaded">
 					<IncludedMemoryFiles>
 						<File Id="254342850" Language="SFX">
 							<ShortName>nw_loop_2.wav</ShortName>
-							<Path>SFX\nw_loop_2_78160227.wem</Path>
+							<Path>SFX/nw_loop_2_78160227.wem</Path>
 						</File>
 						<File Id="286926855" Language="SFX">
 							<ShortName>move_shape_left.wav</ShortName>
-							<Path>SFX\move_shape_left_9EDFC787.wem</Path>
+							<Path>SFX/move_shape_left_9EDFC787.wem</Path>
 						</File>
 						<File Id="365611745" Language="SFX">
 							<ShortName>land_shape.wav</ShortName>
-							<Path>SFX\land_shape_9EDFC787.wem</Path>
+							<Path>SFX/land_shape_9EDFC787.wem</Path>
 						</File>
 						<File Id="432806552" Language="SFX">
 							<ShortName>flip_shape.wav</ShortName>
-							<Path>SFX\flip_shape_9EDFC787.wem</Path>
+							<Path>SFX/flip_shape_9EDFC787.wem</Path>
 						</File>
 						<File Id="555003965" Language="SFX">
 							<ShortName>move_shape_right.wav</ShortName>
-							<Path>SFX\move_shape_right_9EDFC787.wem</Path>
+							<Path>SFX/move_shape_right_9EDFC787.wem</Path>
 						</File>
 						<File Id="577128883" Language="SFX">
 							<ShortName>main_menu.wav</ShortName>
-							<Path>SFX\main_menu_9EDFC787.wem</Path>
+							<Path>SFX/main_menu_9EDFC787.wem</Path>
 						</File>
 						<File Id="745266543" Language="SFX">
 							<ShortName>nw_loop_1.wav</ShortName>
-							<Path>SFX\nw_loop_1_9EDFC787.wem</Path>
+							<Path>SFX/nw_loop_1_9EDFC787.wem</Path>
 						</File>
 						<File Id="818851471" Language="SFX">
 							<ShortName>nw_loop_3.wav</ShortName>
-							<Path>SFX\nw_loop_3_78160227.wem</Path>
+							<Path>SFX/nw_loop_3_78160227.wem</Path>
 						</File>
 						<File Id="973273452" Language="SFX">
 							<ShortName>Big-D.wav</ShortName>
-							<Path>SFX\Big-D_9EDFC787.wem</Path>
+							<Path>SFX/Big-D_9EDFC787.wem</Path>
 						</File>
 						<File Id="1036727112" Language="SFX">
 							<ShortName>clear_row.wav</ShortName>
-							<Path>SFX\clear_row_9EDFC787.wem</Path>
+							<Path>SFX/clear_row_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="OneShot" DurationMin="1.073187" DurationMax="1.073187">
+				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start">
 					<IncludedMemoryFiles>
 						<File Id="404726350" Language="SFX">
 							<ShortName>game_start.wav</ShortName>
-							<Path>SFX\game_start_9EDFC787.wem</Path>
+							<Path>SFX/game_start_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3742617664" Name="land_shape" ObjectPath="\Events\Default Work Unit\land_shape" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="3742617664" Name="land_shape" ObjectPath="\Events\Default Work Unit\land_shape">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="2925865545" Name="land_shape_trigger" ObjectPath="\Triggers\Default Work Unit\land_shape_trigger"/>
 					</ActionTrigger>
 				</Event>
-				<Event Id="2005704188" Name="main_menu" ObjectPath="\Events\Default Work Unit\main_menu" DurationType="Infinite">
+				<Event Id="2005704188" Name="main_menu" ObjectPath="\Events\Default Work Unit\main_menu">
 					<IncludedMemoryFiles>
 						<File Id="254342850" Language="SFX">
 							<ShortName>nw_loop_2.wav</ShortName>
-							<Path>SFX\nw_loop_2_78160227.wem</Path>
+							<Path>SFX/nw_loop_2_78160227.wem</Path>
 						</File>
 						<File Id="286926855" Language="SFX">
 							<ShortName>move_shape_left.wav</ShortName>
-							<Path>SFX\move_shape_left_9EDFC787.wem</Path>
+							<Path>SFX/move_shape_left_9EDFC787.wem</Path>
 						</File>
 						<File Id="365611745" Language="SFX">
 							<ShortName>land_shape.wav</ShortName>
-							<Path>SFX\land_shape_9EDFC787.wem</Path>
+							<Path>SFX/land_shape_9EDFC787.wem</Path>
 						</File>
 						<File Id="432806552" Language="SFX">
 							<ShortName>flip_shape.wav</ShortName>
-							<Path>SFX\flip_shape_9EDFC787.wem</Path>
+							<Path>SFX/flip_shape_9EDFC787.wem</Path>
 						</File>
 						<File Id="555003965" Language="SFX">
 							<ShortName>move_shape_right.wav</ShortName>
-							<Path>SFX\move_shape_right_9EDFC787.wem</Path>
+							<Path>SFX/move_shape_right_9EDFC787.wem</Path>
 						</File>
 						<File Id="577128883" Language="SFX">
 							<ShortName>main_menu.wav</ShortName>
-							<Path>SFX\main_menu_9EDFC787.wem</Path>
+							<Path>SFX/main_menu_9EDFC787.wem</Path>
 						</File>
 						<File Id="745266543" Language="SFX">
 							<ShortName>nw_loop_1.wav</ShortName>
-							<Path>SFX\nw_loop_1_9EDFC787.wem</Path>
+							<Path>SFX/nw_loop_1_9EDFC787.wem</Path>
 						</File>
 						<File Id="818851471" Language="SFX">
 							<ShortName>nw_loop_3.wav</ShortName>
-							<Path>SFX\nw_loop_3_78160227.wem</Path>
+							<Path>SFX/nw_loop_3_78160227.wem</Path>
 						</File>
 						<File Id="973273452" Language="SFX">
 							<ShortName>Big-D.wav</ShortName>
-							<Path>SFX\Big-D_9EDFC787.wem</Path>
+							<Path>SFX/Big-D_9EDFC787.wem</Path>
 						</File>
 						<File Id="1036727112" Language="SFX">
 							<ShortName>clear_row.wav</ShortName>
-							<Path>SFX\clear_row_9EDFC787.wem</Path>
+							<Path>SFX/clear_row_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1146992660" Name="move_shape_left" ObjectPath="\Events\Default Work Unit\move_shape_left" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="1146992660" Name="move_shape_left" ObjectPath="\Events\Default Work Unit\move_shape_left">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="1337504389" Name="move_shape_left_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_left_trigger"/>
 					</ActionTrigger>
 				</Event>
-				<Event Id="898688307" Name="move_shape_right" ObjectPath="\Events\Default Work Unit\move_shape_right" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="898688307" Name="move_shape_right" ObjectPath="\Events\Default Work Unit\move_shape_right">
 					<ActionTrigger>
 						<ActionTriggerEntry Id="2830854102" Name="move_shape_right_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_right_trigger"/>
 					</ActionTrigger>
 				</Event>
-				<Event Id="3411202357" Name="round_lose" ObjectPath="\Events\Default Work Unit\round_lose" DurationType="OneShot" DurationMin="1.444312" DurationMax="1.444312">
+				<Event Id="3411202357" Name="round_lose" ObjectPath="\Events\Default Work Unit\round_lose">
 					<IncludedMemoryFiles>
 						<File Id="106603757" Language="SFX">
 							<ShortName>round_lose.wav</ShortName>
-							<Path>SFX\round_lose_9EDFC787.wem</Path>
+							<Path>SFX/round_lose_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="361697008" Name="round_win" ObjectPath="\Events\Default Work Unit\round_win" DurationType="OneShot" DurationMin="1.371500" DurationMax="1.371500">
+				<Event Id="361697008" Name="round_win" ObjectPath="\Events\Default Work Unit\round_win">
 					<IncludedMemoryFiles>
 						<File Id="168330736" Language="SFX">
 							<ShortName>round_win.wav</ShortName>
-							<Path>SFX\round_win_9EDFC787.wem</Path>
+							<Path>SFX/round_win_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3435819489" Name="stage_complete" ObjectPath="\Events\Default Work Unit\stage_complete" DurationType="OneShot" DurationMin="1.152667" DurationMax="1.152667">
+				<Event Id="3435819489" Name="stage_complete" ObjectPath="\Events\Default Work Unit\stage_complete">
 					<IncludedMemoryFiles>
 						<File Id="648398652" Language="SFX">
 							<ShortName>stage_complete.wav</ShortName>
-							<Path>SFX\stage_complete_9EDFC787.wem</Path>
+							<Path>SFX/stage_complete_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
