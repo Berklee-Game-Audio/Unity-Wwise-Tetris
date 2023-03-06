@@ -160,7 +160,7 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicSwitchContainer Name="gameplay_music_switch_single_level" ID="{75340F96-ABE3-4412-9798-CB79D0E09439}" ShortID="224386346">
+						<MusicSwitchContainer Name="gameplay_music_stage_switch_single_level" ID="{75340F96-ABE3-4412-9798-CB79D0E09439}" ShortID="224386346">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -178,6 +178,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicPlaylistContainer Name="gameplay_stage_1_playlist" ID="{05C68854-F606-4223-894A-8DC4BC5479AF}" ShortID="772748032">
+									<PropertyList>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B98C6796-7516-45E5-AA26-88CC77AB0511}"/>
@@ -446,7 +450,21 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists/>
+									<ObjectLists>
+										<ObjectList Name="Stingers">
+											<Reference>
+												<Local>
+													<MusicStinger Name="" ID="{8E1844CA-DAB5-423E-86FE-017B2F9A8F99}">
+														<PropertyList>
+															<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+														</PropertyList>
+														<TriggerRef Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+														<SegmentRef Name="flip_shape_segment" ID="{7A381F6E-4834-4815-8D4A-8F4A0C9E05B5}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
+													</MusicStinger>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{BAB77369-4DBA-4A0F-BAB6-B587E698E172}" ShortID="398896294">
 											<PropertyList>
@@ -571,7 +589,17 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists/>
+									<ObjectLists>
+										<ObjectList Name="Stingers">
+											<Reference>
+												<Local>
+													<MusicStinger Name="" ID="{D0C073CB-C9D5-4628-8203-BD183184E837}">
+														<TriggerRef Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+													</MusicStinger>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{214FF3EB-D2DF-49EB-962B-74B876293B52}" ShortID="943815552">
 											<PropertyList>
@@ -1169,41 +1197,8 @@
 								<ObjectList Name="Stingers">
 									<Reference>
 										<Local>
-											<MusicStinger Name="" ID="{63D924AD-8B37-4CC6-BC29-DC56E15BA836}">
-												<TriggerRef Name="clear_row_trigger" ID="{E09A0590-93C0-45E7-A80A-E3788CB28BB7}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
-												<SegmentRef Name="clear_row_segment" ID="{9192B98F-25E7-474C-9A9B-E69666DA816B}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-											</MusicStinger>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicStinger Name="" ID="{20FA6396-AFD0-40DE-BEA4-160D2B92B59C}">
+											<MusicStinger Name="" ID="{D391C43A-FBBD-422A-8882-FE455426E886}">
 												<TriggerRef Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
-												<SegmentRef Name="flip_shape_segment" ID="{D9DDCCF4-A796-43FF-B978-A3D34EBD36CC}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-											</MusicStinger>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicStinger Name="" ID="{23C2EAA9-0874-44D3-99E1-DA1BEA561063}">
-												<TriggerRef Name="land_shape_trigger" ID="{576A5ABB-7ACE-4F8F-85DD-1BE5FF2830AD}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
-												<SegmentRef Name="land_shape_segment" ID="{FFD94D26-548C-402B-B4C3-7102CC4C4281}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-											</MusicStinger>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicStinger Name="" ID="{F6B8F6FC-A087-4B44-8BFF-C80653A387C2}">
-												<TriggerRef Name="move_shape_left_trigger" ID="{7B9B1C3B-C98B-4CBE-8BE7-5E3B0F6F3274}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
-												<SegmentRef Name="move_shape_left_segment" ID="{9A0914DC-E96E-48D4-AF8C-C8752564E922}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-											</MusicStinger>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicStinger Name="" ID="{450F3510-C701-4638-A445-56BFFC6FC8B6}">
-												<TriggerRef Name="move_shape_right_trigger" ID="{4D85103F-C064-4A88-9B2F-8F20E9777B1C}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
-												<SegmentRef Name="move_shape_right_segment" ID="{9B72ED56-2C25-4B5D-9417-9E9D95126E7E}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 											</MusicStinger>
 										</Local>
 									</Reference>
@@ -4720,7 +4715,7 @@
 								<PathElementRef Name="gameplay" ID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="gameplay_music_switch_single_level" ID="{75340F96-ABE3-4412-9798-CB79D0E09439}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" Platform="Linked"/>
+								<AudioNodeRef Name="gameplay_music_stage_switch_single_level" ID="{75340F96-ABE3-4412-9798-CB79D0E09439}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>

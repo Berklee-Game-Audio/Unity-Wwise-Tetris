@@ -13,11 +13,22 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	936729656	stages			\Default Work Unit\stages	
+	2782712965	level			\Default Work Unit\level	
 
 Switch	ID	Name	Switch Group			Notes
 	344719509	stage_01	stages			
 	344719510	stage_02	stages			
 	344719511	stage_03	stages			
+	1004413459	level_10	level			
+	1290008369	level_1	level			
+	1290008370	level_2	level			
+	1290008371	level_3	level			
+	1290008372	level_4	level			
+	1290008373	level_5	level			
+	1290008374	level_6	level			
+	1290008375	level_7	level			
+	1290008376	level_8	level			
+	1290008377	level_9	level			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	762757699	gameplay_state			\Default Work Unit\gameplay_state	
@@ -30,6 +41,7 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	14811615	stage_number			\Default Work Unit\stage_number	
 	3817197105	max_height			\Default Work Unit\max_height	
+	4014985419	level_number			\Default Work Unit\level_number	
 
 Trigger	ID	Name			Wwise Object Path	Notes
 	750315547	flip_shape_trigger			\Default Work Unit\flip_shape_trigger	
@@ -41,16 +53,12 @@ Trigger	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	106603757	round_lose	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\round_lose_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\round_lose_segment\round_lose		13127
 	168330736	round_win	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\round_win_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\round_win_segment\round_win		11199
-	254342850	nw_loop_2	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\nw_loop_2_78160227.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\gameplay_stage_2_playlist\gameplay_stage_2_segment\nw_loop_2		50779
-	286926855	move_shape_left	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\move_shape_left_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\move_shape_left_segment\move_shape_left		10546
-	365611745	land_shape	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\land_shape_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\land_shape_segment\land_shape		9666
+	254342850	nw_loop_2	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\nw_loop_2_78160227.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_stage_switch_single_level\gameplay_stage_2_playlist\gameplay_stage_2_segment\nw_loop_2		50779
 	404726350	game_start	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\game_start_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\game_start_segment\game_start		10194
-	432806552	flip_shape	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\flip_shape_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\flip_shape_segment\flip_shape		10768
-	555003965	move_shape_right	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\move_shape_right_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\move_shape_right_segment\move_shape_right		11307
+	432806552	flip_shape	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\flip_shape_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_multi_level_not_implemented\gameplay_music_switch_single_level_01\flip_shape_segment\flip_shape		10768
 	577128883	main_menu	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\main_menu_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\main_menu_segment\main_menu		10562
 	648398652	stage_complete	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\stage_complete_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\stage_complete_segment\stage_complete		10522
-	745266543	nw_loop_1	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\nw_loop_1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\gameplay_stage_1_playlist\gameplay_stage_1_segment\nw_loop_1		27463
-	818851471	nw_loop_3	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\nw_loop_3_78160227.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\gameplay_stage_3_playlist\gameplay_stage_3_segment\nw_loop_3		49861
-	973273452	example_rtpc_track	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\Big-D_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\gameplay_stage_1_playlist\gameplay_stage_1_segment\example_rtpc_track		37963
-	1036727112	clear_row	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\clear_row_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_switch_single_level\clear_row_segment\clear_row		9110
+	745266543	nw_loop_1	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\nw_loop_1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_stage_switch_single_level\gameplay_stage_1_playlist\gameplay_stage_1_segment\nw_loop_1		27463
+	818851471	nw_loop_3	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\nw_loop_3_78160227.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_stage_switch_single_level\gameplay_stage_3_playlist\gameplay_stage_3_segment\nw_loop_3		49861
+	973273452	example_rtpc_track	Y:\GoogleDrive\_CloudSync\Work\Berklee\GIT\Unity-Tetris\Wwise Tetris\.cache\Windows\SFX\Big-D_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Game Switch Container\gameplay_music_stage_switch_single_level\gameplay_stage_1_playlist\gameplay_stage_1_segment\example_rtpc_track		37963
 
