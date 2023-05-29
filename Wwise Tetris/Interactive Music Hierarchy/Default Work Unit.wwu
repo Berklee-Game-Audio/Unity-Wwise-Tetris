@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" SchemaVersion="110">
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}" PersistMode="Standalone">
 			<ChildrenList>
@@ -143,7 +143,6 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
-							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{CC960C2B-634A-483E-9C0E-557323EE8544}" ShortID="81417456">
 									<PropertyList>
@@ -261,46 +260,6 @@
 													</ObjectLists>
 												</MusicTrack>
 												<MusicTrack Name="example_rtpc_track" ID="{CD55FDF2-34E1-471D-99F8-03CF199B541A}" ShortID="84104127">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<RTPCList>
-																<RTPC Name="" ID="{8FE69841-A2B9-418F-81DB-205B6BA619D9}" ShortID="836504832">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="max_height" ID="{7F376673-56E8-4E0D-A1DD-2267D7492411}" WorkUnitID="{158CF201-52AB-472E-8360-12D4DE76DA5E}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{9BBC5046-129A-4768-8AC1-40DB0515CAAD}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-0.09001</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>9.65136</XPos>
-																				<YPos>0.65058</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>12.5850340136054</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>25</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6649D400-A1A7-4367-BF14-871356FFDB20}"/>
@@ -330,6 +289,53 @@
 														</MusicTransition>
 													</TransitionList>
 													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{8FE69841-A2B9-418F-81DB-205B6BA619D9}" ShortID="836504832">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="max_height" ID="{7F376673-56E8-4E0D-A1DD-2267D7492411}" WorkUnitID="{158CF201-52AB-472E-8360-12D4DE76DA5E}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{9BBC5046-129A-4768-8AC1-40DB0515CAAD}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-0.09001</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>9.65136</XPos>
+																								<YPos>0.65058</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>12.5850340136054</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>25</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
@@ -450,21 +456,6 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Stingers">
-											<Reference>
-												<Local>
-													<MusicStinger Name="" ID="{8E1844CA-DAB5-423E-86FE-017B2F9A8F99}">
-														<PropertyList>
-															<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-														</PropertyList>
-														<TriggerRef Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
-														<SegmentRef Name="flip_shape_segment" ID="{7A381F6E-4834-4815-8D4A-8F4A0C9E05B5}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
-													</MusicStinger>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{BAB77369-4DBA-4A0F-BAB6-B587E698E172}" ShortID="398896294">
 											<PropertyList>
@@ -589,17 +580,6 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Stingers">
-											<Reference>
-												<Local>
-													<MusicStinger Name="" ID="{D0C073CB-C9D5-4628-8203-BD183184E837}">
-														<TriggerRef Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
-													</MusicStinger>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{214FF3EB-D2DF-49EB-962B-74B876293B52}" ShortID="943815552">
 											<PropertyList>
@@ -724,7 +704,6 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists/>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{84E44AB0-F122-4398-A8E5-146AE3DA8123}" ShortID="613029341">
 											<PropertyList>
@@ -1198,7 +1177,55 @@
 									<Reference>
 										<Local>
 											<MusicStinger Name="" ID="{D391C43A-FBBD-422A-8882-FE455426E886}">
+												<PropertyList>
+													<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+												</PropertyList>
 												<TriggerRef Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+												<SegmentRef Name="flip_shape_segment" ID="{D9DDCCF4-A796-43FF-B978-A3D34EBD36CC}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{4F8646C4-123D-43C9-90D9-03D20E651EA8}">
+												<PropertyList>
+													<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+												</PropertyList>
+												<TriggerRef Name="clear_row_trigger" ID="{E09A0590-93C0-45E7-A80A-E3788CB28BB7}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+												<SegmentRef Name="clear_row_segment" ID="{9192B98F-25E7-474C-9A9B-E69666DA816B}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{0F6DF564-F150-4C49-A738-8D6D1524C9CC}">
+												<PropertyList>
+													<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+												</PropertyList>
+												<TriggerRef Name="land_shape_trigger" ID="{576A5ABB-7ACE-4F8F-85DD-1BE5FF2830AD}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+												<SegmentRef Name="land_shape_segment" ID="{FFD94D26-548C-402B-B4C3-7102CC4C4281}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{4C58F2EA-8944-4FF7-BA44-575D7854B48F}">
+												<PropertyList>
+													<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+												</PropertyList>
+												<TriggerRef Name="move_shape_left_trigger" ID="{7B9B1C3B-C98B-4CBE-8BE7-5E3B0F6F3274}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+												<SegmentRef Name="move_shape_left_segment" ID="{9A0914DC-E96E-48D4-AF8C-C8752564E922}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
+											</MusicStinger>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{1888861C-E27E-4CC3-8510-BE036CD0FB2A}">
+												<PropertyList>
+													<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+												</PropertyList>
+												<TriggerRef Name="move_shape_right_trigger" ID="{4D85103F-C064-4A88-9B2F-8F20E9777B1C}" WorkUnitID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}"/>
+												<SegmentRef Name="move_shape_right_segment" ID="{9B72ED56-2C25-4B5D-9417-9E9D95126E7E}" WorkUnitID="{FC51D61E-C862-49D2-B92A-5CED9BDE2202}"/>
 											</MusicStinger>
 										</Local>
 									</Reference>
@@ -1991,7 +2018,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{CC2598B0-576A-4F4D-A24C-769C0297991F}" ShortID="37439273">
 													<PropertyList>
@@ -2116,7 +2142,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{971E2420-5D75-4BBE-8555-E312FB06E30C}" ShortID="529993012">
 													<PropertyList>
@@ -2241,7 +2266,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{3DA0692A-6D4B-44E8-9372-6F885356B986}" ShortID="1048249851">
 													<PropertyList>
@@ -2915,7 +2939,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{F6D73C52-4DC6-4BA7-A8EE-22F8A42D4B34}" ShortID="576691675">
 													<PropertyList>
@@ -3040,7 +3063,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{B644F91B-D417-49DF-A682-9D2ECC9BE7B0}" ShortID="862161628">
 													<PropertyList>
@@ -3165,7 +3187,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{96EF03D7-C698-44DC-A2D0-C2B892BE9828}" ShortID="191273698">
 													<PropertyList>
@@ -3839,7 +3860,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{A94CE5A1-E0C3-4DED-8BE5-8A5B61ECF652}" ShortID="741937754">
 													<PropertyList>
@@ -3964,7 +3984,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{93251180-700E-4B9F-87B1-59EA2C9F60D4}" ShortID="790798425">
 													<PropertyList>
@@ -4089,7 +4108,6 @@
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
-											<ObjectLists/>
 											<Playlist>
 												<MusicPlaylistItem Name="" ID="{BE31CB3F-EEDE-4C0F-AFC5-18FB6180D655}" ShortID="810748824">
 													<PropertyList>
@@ -4646,7 +4664,6 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
-							<ObjectLists/>
 							<ArgumentList>
 								<ArgumentRef Name="level" ID="{529D8E81-4481-418D-89C5-4A2D8938FAD9}"/>
 							</ArgumentList>
@@ -4705,7 +4722,6 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ObjectLists/>
 					<ArgumentList>
 						<ArgumentRef Name="gameplay_state" ID="{411E0025-90FC-4797-B8F1-6C4E65D3A879}"/>
 					</ArgumentList>

@@ -1,191 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
-		<ProjectRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/</ProjectRoot>
-		<SourceFilesRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>../../</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/Berklee/GIT/Unity-Tetris/Wwise Tetris/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
-	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3449238007">
-			<ObjectPath>Init</ObjectPath>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{75A52386-7C88-038E-1643-B79FAB4FEB54}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX" Hash="252832179">
-			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
-			<ShortName>Tetris_Soundbank</ShortName>
-			<Path>Tetris_Soundbank.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="3249509688" Name="clear_row_trigger" ObjectPath="\Triggers\Default Work Unit\clear_row_trigger"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="2497998238" Name="flip_shape" ObjectPath="\Events\Default Work Unit\flip_shape" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="750315547" Name="flip_shape_trigger" ObjectPath="\Triggers\Default Work Unit\flip_shape_trigger"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="2238459845" Name="game_loaded" ObjectPath="\Events\Default Work Unit\game_loaded" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="254342850" Language="SFX">
-							<ShortName>nw_loop_2.wav</ShortName>
-							<Path>SFX/nw_loop_2_78160227.wem</Path>
-						</File>
-						<File Id="432806552" Language="SFX">
-							<ShortName>flip_shape.wav</ShortName>
-							<Path>SFX/flip_shape_9EDFC787.wem</Path>
-						</File>
-						<File Id="577128883" Language="SFX">
-							<ShortName>main_menu.wav</ShortName>
-							<Path>SFX/main_menu_9EDFC787.wem</Path>
-						</File>
-						<File Id="745266543" Language="SFX">
-							<ShortName>nw_loop_1.wav</ShortName>
-							<Path>SFX/nw_loop_1_9EDFC787.wem</Path>
-						</File>
-						<File Id="818851471" Language="SFX">
-							<ShortName>nw_loop_3.wav</ShortName>
-							<Path>SFX/nw_loop_3_78160227.wem</Path>
-						</File>
-						<File Id="973273452" Language="SFX">
-							<ShortName>Big-D.wav</ShortName>
-							<Path>SFX/Big-D_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<ActionSetState>
-						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="OneShot" DurationMin="1.073187" DurationMax="1.073187">
-					<IncludedMemoryFiles>
-						<File Id="404726350" Language="SFX">
-							<ShortName>game_start.wav</ShortName>
-							<Path>SFX/game_start_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<ActionSetState>
-						<ActionSetStateEntry Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3742617664" Name="land_shape" ObjectPath="\Events\Default Work Unit\land_shape" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="2925865545" Name="land_shape_trigger" ObjectPath="\Triggers\Default Work Unit\land_shape_trigger"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="2005704188" Name="main_menu" ObjectPath="\Events\Default Work Unit\main_menu" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="254342850" Language="SFX">
-							<ShortName>nw_loop_2.wav</ShortName>
-							<Path>SFX/nw_loop_2_78160227.wem</Path>
-						</File>
-						<File Id="432806552" Language="SFX">
-							<ShortName>flip_shape.wav</ShortName>
-							<Path>SFX/flip_shape_9EDFC787.wem</Path>
-						</File>
-						<File Id="577128883" Language="SFX">
-							<ShortName>main_menu.wav</ShortName>
-							<Path>SFX/main_menu_9EDFC787.wem</Path>
-						</File>
-						<File Id="745266543" Language="SFX">
-							<ShortName>nw_loop_1.wav</ShortName>
-							<Path>SFX/nw_loop_1_9EDFC787.wem</Path>
-						</File>
-						<File Id="818851471" Language="SFX">
-							<ShortName>nw_loop_3.wav</ShortName>
-							<Path>SFX/nw_loop_3_78160227.wem</Path>
-						</File>
-						<File Id="973273452" Language="SFX">
-							<ShortName>Big-D.wav</ShortName>
-							<Path>SFX/Big-D_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<ActionSetState>
-						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="1146992660" Name="move_shape_left" ObjectPath="\Events\Default Work Unit\move_shape_left" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="1337504389" Name="move_shape_left_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_left_trigger"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="898688307" Name="move_shape_right" ObjectPath="\Events\Default Work Unit\move_shape_right" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
-					<ActionTrigger>
-						<ActionTriggerEntry Id="2830854102" Name="move_shape_right_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_right_trigger"/>
-					</ActionTrigger>
-				</Event>
-				<Event Id="3411202357" Name="round_lose" ObjectPath="\Events\Default Work Unit\round_lose" DurationType="OneShot" DurationMin="1.444312" DurationMax="1.444312">
-					<IncludedMemoryFiles>
-						<File Id="106603757" Language="SFX">
-							<ShortName>round_lose.wav</ShortName>
-							<Path>SFX/round_lose_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<ActionSetState>
-						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="361697008" Name="round_win" ObjectPath="\Events\Default Work Unit\round_win" DurationType="OneShot" DurationMin="1.3715" DurationMax="1.3715">
-					<IncludedMemoryFiles>
-						<File Id="168330736" Language="SFX">
-							<ShortName>round_win.wav</ShortName>
-							<Path>SFX/round_win_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<ActionSetState>
-						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3435819489" Name="stage_complete" ObjectPath="\Events\Default Work Unit\stage_complete" DurationType="OneShot" DurationMin="1.152667" DurationMax="1.152667">
-					<IncludedMemoryFiles>
-						<File Id="648398652" Language="SFX">
-							<ShortName>stage_complete.wav</ShortName>
-							<Path>SFX/stage_complete_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
 			<GameParameters>
-				<GameParameter Id="14811615" Name="stage_number" ObjectPath="\Game Parameters\Default Work Unit\stage_number"/>
-				<GameParameter Id="3817197105" Name="max_height" ObjectPath="\Game Parameters\Default Work Unit\max_height"/>
-				<GameParameter Id="4014985419" Name="level_number" ObjectPath="\Game Parameters\Default Work Unit\level_number"/>
+				<GameParameter Id="14811615" Name="stage_number"/>
+				<GameParameter Id="849560917" Name="note"/>
+				<GameParameter Id="2398231425" Name="score"/>
+				<GameParameter Id="3817197105" Name="max_height"/>
+				<GameParameter Id="4014985419" Name="level_number"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay" GUID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="762757699" Name="gameplay_state" ObjectPath="\States\Default Work Unit\gameplay_state" GUID="{411E0025-90FC-4797-B8F1-6C4E65D3A879}">
+				<StateGroup Id="762757699" Name="gameplay_state">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\gameplay_state\None" GUID="{D7A9AA45-9D57-4B45-9913-8B181FCEC150}"/>
-						<State Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu" GUID="{6057D18C-EAED-4069-8421-08D348B16F18}"/>
-						<State Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\gameplay_state\gameplay" GUID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}"/>
+						<State Id="89505537" Name="gameplay"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2607556080" Name="menu"/>
 					</States>
-				</StateGroup>
-				<StateGroup Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\gameplay_state\menu" GUID="{6057D18C-EAED-4069-8421-08D348B16F18}">
-					<States/>
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
-				<SwitchGroup Id="936729656" Name="stages" ObjectPath="\Switches\Default Work Unit\stages" GUID="{9B98BCB8-3E29-46FE-BB02-AD354A7BEC74}">
+				<SwitchGroup Id="936729656" Name="stages">
+					<GameParameterRef Id="14811615"/>
 					<Switches>
-						<Switch Id="344719509" Name="stage_01" ObjectPath="\Switches\Default Work Unit\stages\stage_01" GUID="{A1A55C35-539A-4E1C-AEFA-847D3CEBC098}"/>
-						<Switch Id="344719510" Name="stage_02" ObjectPath="\Switches\Default Work Unit\stages\stage_02" GUID="{319047F9-74E6-4133-BA97-7C718482DEC0}"/>
-						<Switch Id="344719511" Name="stage_03" ObjectPath="\Switches\Default Work Unit\stages\stage_03" GUID="{F488CA81-2A78-402A-9285-BF9594191A51}"/>
+						<Switch Id="344719509" Name="stage_01"/>
+						<Switch Id="344719510" Name="stage_02"/>
+						<Switch Id="344719511" Name="stage_03"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2782712965" Name="level">
+					<GameParameterRef Id="4014985419"/>
+					<Switches>
+						<Switch Id="1004413459" Name="level_10"/>
+						<Switch Id="1290008369" Name="level_1"/>
+						<Switch Id="1290008370" Name="level_2"/>
+						<Switch Id="1290008371" Name="level_3"/>
+						<Switch Id="1290008372" Name="level_4"/>
+						<Switch Id="1290008373" Name="level_5"/>
+						<Switch Id="1290008374" Name="level_6"/>
+						<Switch Id="1290008375" Name="level_7"/>
+						<Switch Id="1290008376" Name="level_8"/>
+						<Switch Id="1290008377" Name="level_9"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3052682920" Type="User" Language="SFX" Hash="{F42E831F-45AA-81FE-F19C-71FBCFC4A737}">
+			<ShortName>Tetris_Soundbank</ShortName>
+			<Path>Tetris_Soundbank.bnk</Path>
+			<Media>
+				<File Id="106603757" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>round_lose.wav</ShortName>
+					<CachePath>SFX/round_lose_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="168330736" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>round_win.wav</ShortName>
+					<CachePath>SFX/round_win_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="254342850" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>nw_loop_2.wav</ShortName>
+					<CachePath>SFX/nw_loop_2_78160227.wem</CachePath>
+				</File>
+				<File Id="286926855" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>move_shape_left.wav</ShortName>
+					<CachePath>SFX/move_shape_left_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="365611745" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>land_shape.wav</ShortName>
+					<CachePath>SFX/land_shape_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="404726350" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>game_start.wav</ShortName>
+					<CachePath>SFX/game_start_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="432806552" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>flip_shape.wav</ShortName>
+					<CachePath>SFX/flip_shape_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="555003965" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>move_shape_right.wav</ShortName>
+					<CachePath>SFX/move_shape_right_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="577128883" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>main_menu.wav</ShortName>
+					<CachePath>SFX/main_menu_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="648398652" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>stage_complete.wav</ShortName>
+					<CachePath>SFX/stage_complete_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="745266543" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>nw_loop_1.wav</ShortName>
+					<CachePath>SFX/nw_loop_1_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="818851471" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>nw_loop_3.wav</ShortName>
+					<CachePath>SFX/nw_loop_3_78160227.wem</CachePath>
+				</File>
+				<File Id="973273452" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Big-D.wav</ShortName>
+					<CachePath>SFX/Big-D_9EDFC787.wem</CachePath>
+				</File>
+				<File Id="1036727112" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>clear_row.wav</ShortName>
+					<CachePath>SFX/clear_row_9EDFC787.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1870373793" Name="clear_row">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="3249509688" Name="clear_row_trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2497998238" Name="flip_shape">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="750315547" Name="flip_shape_trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2238459845" Name="game_loaded">
+					<MediaRefs>
+						<MediaRef Id="577128883"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="762757699" Id="89505537"/>
+							<MediaRefs>
+								<MediaRef Id="286926855"/>
+								<MediaRef Id="365611745"/>
+								<MediaRef Id="432806552"/>
+								<MediaRef Id="555003965"/>
+								<MediaRef Id="1036727112"/>
+							</MediaRefs>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="936729656" Id="344719509"/>
+									<MediaRefs>
+										<MediaRef Id="745266543"/>
+										<MediaRef Id="973273452"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="936729656" Id="344719510"/>
+									<MediaRefs>
+										<MediaRef Id="254342850"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="936729656" Id="344719511"/>
+									<MediaRefs>
+										<MediaRef Id="818851471"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="762757699" Id="2607556080"/>
+							<MediaRefs>
+								<MediaRef Id="973273452"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="762757699" Id="2607556080" Name="menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="733168346" Name="game_start">
+					<MediaRefs>
+						<MediaRef Id="404726350"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="762757699" Id="89505537" Name="gameplay"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3742617664" Name="land_shape">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2925865545" Name="land_shape_trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2005704188" Name="main_menu">
+					<MediaRefs>
+						<MediaRef Id="577128883"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="762757699" Id="89505537"/>
+							<MediaRefs>
+								<MediaRef Id="286926855"/>
+								<MediaRef Id="365611745"/>
+								<MediaRef Id="432806552"/>
+								<MediaRef Id="555003965"/>
+								<MediaRef Id="1036727112"/>
+							</MediaRefs>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="936729656" Id="344719509"/>
+									<MediaRefs>
+										<MediaRef Id="745266543"/>
+										<MediaRef Id="973273452"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="936729656" Id="344719510"/>
+									<MediaRefs>
+										<MediaRef Id="254342850"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="936729656" Id="344719511"/>
+									<MediaRefs>
+										<MediaRef Id="818851471"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="762757699" Id="2607556080"/>
+							<MediaRefs>
+								<MediaRef Id="973273452"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="762757699" Id="2607556080" Name="menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1146992660" Name="move_shape_left">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="1337504389" Name="move_shape_left_trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="898688307" Name="move_shape_right">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2830854102" Name="move_shape_right_trigger"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="3411202357" Name="round_lose">
+					<MediaRefs>
+						<MediaRef Id="106603757"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="762757699" Id="2607556080" Name="menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="361697008" Name="round_win">
+					<MediaRefs>
+						<MediaRef Id="168330736"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="762757699" Id="2607556080" Name="menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3435819489" Name="stage_complete">
+					<MediaRefs>
+						<MediaRef Id="648398652"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="14811615" Name="stage_number"/>
+				<GameParameter Id="3817197105" Name="max_height"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="762757699" Name="gameplay_state">
+					<States>
+						<State Id="89505537" Name="gameplay"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2607556080" Name="menu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="936729656" Name="stages">
+					<GameParameterRef Id="14811615"/>
+					<Switches>
+						<Switch Id="344719509" Name="stage_01"/>
+						<Switch Id="344719510" Name="stage_02"/>
+						<Switch Id="344719511" Name="stage_03"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 			<Triggers>
-				<Trigger Id="750315547" Name="flip_shape_trigger" ObjectPath="\Triggers\Default Work Unit\flip_shape_trigger"/>
-				<Trigger Id="1337504389" Name="move_shape_left_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_left_trigger"/>
-				<Trigger Id="2830854102" Name="move_shape_right_trigger" ObjectPath="\Triggers\Default Work Unit\move_shape_right_trigger"/>
-				<Trigger Id="2925865545" Name="land_shape_trigger" ObjectPath="\Triggers\Default Work Unit\land_shape_trigger"/>
-				<Trigger Id="3249509688" Name="clear_row_trigger" ObjectPath="\Triggers\Default Work Unit\clear_row_trigger"/>
+				<Trigger Id="750315547" Name="flip_shape_trigger"/>
+				<Trigger Id="1337504389" Name="move_shape_left_trigger"/>
+				<Trigger Id="2830854102" Name="move_shape_right_trigger"/>
+				<Trigger Id="2925865545" Name="land_shape_trigger"/>
+				<Trigger Id="3249509688" Name="clear_row_trigger"/>
 			</Triggers>
 		</SoundBank>
 	</SoundBanks>
+	<FileHash>{CFE077E8-98EA-920A-CACF-7A47D7BEF473}</FileHash>
 </SoundBanksInfo>

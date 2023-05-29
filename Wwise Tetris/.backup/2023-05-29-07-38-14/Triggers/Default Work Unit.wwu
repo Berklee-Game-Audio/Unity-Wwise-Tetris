@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}" SchemaVersion="103">
+	<Triggers>
+		<WorkUnit Name="Default Work Unit" ID="{919FA74F-1DEB-4139-90F9-F725F6AC6E43}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="clear_row_trigger" ID="{E09A0590-93C0-45E7-A80A-E3788CB28BB7}"/>
+				<Trigger Name="flip_shape_trigger" ID="{62432E34-BF30-4B81-AE26-E60D1AC53B21}"/>
+				<Trigger Name="land_shape_trigger" ID="{576A5ABB-7ACE-4F8F-85DD-1BE5FF2830AD}"/>
+				<Trigger Name="move_shape_right_trigger" ID="{4D85103F-C064-4A88-9B2F-8F20E9777B1C}"/>
+				<Trigger Name="move_shape_left_trigger" ID="{7B9B1C3B-C98B-4CBE-8BE7-5E3B0F6F3274}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>
