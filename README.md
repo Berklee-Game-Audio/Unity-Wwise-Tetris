@@ -4,7 +4,7 @@ Optimized for Unity Version:
 2022.2.13f1
 
 Optimized for Wwise Version: 
-2022.1.4.8202
+2023.1.4.8496
 
 Video Tutorials:
 https://www.youtube.com/watch?v=NVyCF5SY63o

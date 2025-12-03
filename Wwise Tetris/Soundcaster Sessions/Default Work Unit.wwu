@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{26881DF1-2F3D-478A-BD15-44BD6BE8F7F1}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{26881DF1-2F3D-478A-BD15-44BD6BE8F7F1}" SchemaVersion="119">
 	<SoundcasterSessions>
 		<WorkUnit Name="Default Work Unit" ID="{26881DF1-2F3D-478A-BD15-44BD6BE8F7F1}" PersistMode="Standalone">
 			<ChildrenList>
@@ -72,8 +72,8 @@
 						<CurrentStateRef Name="gameplay" ID="{C9BCAB69-892B-4BFD-BF15-F5A3CFFAFA80}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="level_3" ID="{FEE3D274-BAB7-4D7E-BF1C-C3FD73E6A435}"/>
-						<CurrentSwitchRef Name="stage_03" ID="{F488CA81-2A78-402A-9285-BF9594191A51}"/>
+						<CurrentSwitchRef Name="level_1" ID="{FB23F592-E7AA-49A5-B9F2-6A19397E0D4D}"/>
+						<CurrentSwitchRef Name="stage_01" ID="{A1A55C35-539A-4E1C-AEFA-847D3CEBC098}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

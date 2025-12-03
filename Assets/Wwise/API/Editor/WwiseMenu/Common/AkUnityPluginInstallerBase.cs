@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2023 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #if UNITY_EDITOR
@@ -281,7 +281,7 @@ public class AkDocHelper
 			m_WwiseVersionString += "_" + (temp2 & 0xFFFF);
 		}
 
-		var docUrl = "http://www.audiokinetic.com/library/" + m_WwiseVersionString + "/?source=Unity&id=main.html";
+		var docUrl = "http://www.audiokinetic.com/library/" + m_WwiseVersionString + "/?source=Unity&id=index.html";
 		var isConnected = false;
 		try
 		{
